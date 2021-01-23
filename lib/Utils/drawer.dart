@@ -10,8 +10,8 @@ Widget drawer(){
               currentAccountPicture: CircleAvatar(  
                 backgroundColor: Colors.greenAccent,  
                 child: Text(  
-                  "G",  
-                  style: TextStyle(fontSize: 40.0),  
+                  "GFG",  
+                  style: TextStyle(fontSize: 30.0),  
                 ),  
               ),  
             ),    
@@ -19,25 +19,25 @@ Widget drawer(){
               leading: Icon(
                 Icons.home,
               ),
-              title: Text("Home"),
+              title: Text("Home",style: TextStyle(fontSize: 20.0,),),
             ),
             ListTile(
               leading: Icon(
                 Icons.music_note,
               ),
-              title: Text("Play List"),
+              title: Text("Play List",style: TextStyle(fontSize: 20.0)),
             ),
             ListTile(
               leading: Icon(
                 Icons.thumb_up,
               ),
-              title: Text("Liked Songs"),
+              title: Text("Liked Songs",style: TextStyle(fontSize: 20.0)),
             ),
             ListTile(
               leading: Icon(
                 Icons.settings,
               ),
-              title: Text("Setting"),
+              title: Text("Setting",style: TextStyle(fontSize: 20.0)),
             )
             //Text("Home"),
           ],
