@@ -9,7 +9,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
+        
         elevation: 0,
         title: Text("Hear Me"),
         actions: [
@@ -21,40 +23,46 @@ class HomePage extends StatelessWidget {
       ),
       // TODO: Implement Drawer
       drawer: drawer(),
-      body: SingleChildScrollView(
-        child: Stack(
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // User Defined Widget in ../Widgets/label.dart
-                /*
-            lable function provides a way to reuse the code. 
-            */
-                label("Recommended for you"),
-                /* 
-                  Recommended For You
-              Horizontal Slider (ListView) (../Widgets/musicHList.dart)
-            */
-                musicHList(),
+      body: Container(
+        decoration: BoxDecoration(gradient: LinearGradient(colors: [Color.fromRGBO(9,18,39,1),Color.fromRGBO(9, 9, 9, 1.0)])),
+              child: SingleChildScrollView(
+          
+          child: Stack(
+            
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // User Defined Widget in ../Widgets/label.dart
+                  /*
+              lable function provides a way to reuse the code. 
+              */
+                  label("Recommended for you"),
+                  /* 
+                    Recommended For You
+                Horizontal Slider (ListView) (../Widgets/musicHList.dart)
+              */
+                  musicHList(),
 
-                // My Playlist Label
-                label("My Playlist"),
+                  // My Playlist Label
+                  label("My Playlist"),
 
-                // Playlist Horizontal Slider (../Widgets/musicHList.dart)
-                musicHList(),
-                SizedBox(
-                  height: 100,
-                ),
-              ],
-            ),
-          ],
+                  // Playlist Horizontal Slider (../Widgets/musicHList.dart)
+                  musicHList(),
+                  SizedBox(
+                    height: 100,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
       bottomSheet: BottomSheet(
           onClosing: () {},
           builder: (BuildContext context) {
             return Container(
+              
               height: 60,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
