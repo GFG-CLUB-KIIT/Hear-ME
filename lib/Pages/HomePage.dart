@@ -44,6 +44,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+        ],
       ),
       bottomSheet: BottomSheet(
           onClosing: () {},
