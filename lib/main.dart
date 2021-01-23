@@ -6,18 +6,19 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: "Hear Me",
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text("Hear Me"),
-          ),
-          drawer: Drawer(),
-          body: HomePage(),
-        ));
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      themeMode: ThemeMode.dark,
+      title: "Hear Me",
+      home: HomePage(),
+    );
   }
 }
