@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../Widgets/label.dart';
 import '../Widgets/musicHList.dart';
+import '../Utils/drawer.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       // TODO: Implement Drawer
-      drawer: Drawer(),
+      drawer:drawer(), 
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -54,30 +55,35 @@ class HomePage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    children: [
-                      Image.asset(
-                        "Assets/Images/monsters-go-bump.jpg",
-                        fit: BoxFit.cover,
-                        width: 60,
-                        height: 60,
-                      ),
-                      SizedBox(
-                        width: 5,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text("Monsters Go Bump"),
-                          Text("ERIKA RECINOS",
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontSize: 10,
-                              )),
-                        ],
-                      )
-                    ],
+                  InkWell(
+                                      child: Row(
+                      children: [
+                        Image.asset(
+                          "Assets/Images/monsters-go-bump.jpg",
+                          fit: BoxFit.cover,
+                          width: 60,
+                          height: 60,
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Monsters Go Bump"),
+                            Text("ERIKA RECINOS",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontSize: 10,
+                                )),
+                          ],
+                        )
+                      ],
+                    ),
+                    onTap: (){
+                      
+                    },
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
