@@ -27,13 +27,13 @@ class HomePage extends StatelessWidget {
               children: [
                 // User Defined Widget in ../Widgets/label.dart
                 /*
-              lable function provides a way to reuse the code. 
-              */
+            lable function provides a way to reuse the code. 
+            */
                 label("Recommended for you"),
                 /* 
-                    Recommended For You
-                Horizontal Slider (ListView) (../Widgets/musicHList.dart)
-              */
+                  Recommended For You
+              Horizontal Slider (ListView) (../Widgets/musicHList.dart)
+            */
                 musicHList(),
 
                 // My Playlist Label
@@ -44,69 +44,62 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-          DraggableScrollableSheet(
-            initialChildSize: 0.5,
-            minChildSize: 0.1,
-            maxChildSize: 1.0,
-            builder: (BuildContext context, ScrollController scrollController) {
-              return Container(
-                color: Colors.black,
-                child: ListView(
-                  controller: scrollController,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            Image.asset(
-                              "Assets/Images/monsters-go-bump.jpg",
-                              fit: BoxFit.cover,
-                              width: 60,
-                              height: 60,
-                            ),
-                            SizedBox(
-                              width: 5,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Monsters Go Bump"),
-                                Text("ERIKA RECINOS",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize: 10,
-                                    )),
-                              ],
-                            )
-                          ],
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Icon(
-                              Icons.arrow_left,
-                              size: 40,
-                            ),
-                            Icon(
-                              Icons.pause,
-                              size: 40,
-                            ),
-                            Icon(
-                              Icons.arrow_right,
-                              size: 40,
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ],
-                ),
-              );
-            },
-          ),
         ],
       ),
+      bottomSheet: BottomSheet(
+          onClosing: () {},
+          builder: (BuildContext context) {
+            return Container(
+              height: 60,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      Image.asset(
+                        "Assets/Images/monsters-go-bump.jpg",
+                        fit: BoxFit.cover,
+                        width: 60,
+                        height: 60,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text("Monsters Go Bump"),
+                          Text("ERIKA RECINOS",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 10,
+                              )),
+                        ],
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(
+                        Icons.arrow_left,
+                        size: 40,
+                      ),
+                      Icon(
+                        Icons.pause,
+                        size: 40,
+                      ),
+                      Icon(
+                        Icons.arrow_right,
+                        size: 40,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            );
+          }),
     );
   }
 }
