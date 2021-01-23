@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../Widgets/label.dart';
 import '../Widgets/musicHList.dart';
 import '../Utils/drawer.dart';
+import './Player.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -20,10 +21,10 @@ class HomePage extends StatelessWidget {
       ),
       // TODO: Implement Drawer
       drawer: drawer(),
-      body: Stack(
-        children: [
-          SingleChildScrollView(
-            child: Column(
+      body: SingleChildScrollView(
+        child: Stack(
+          children: [
+            Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // User Defined Widget in ../Widgets/label.dart
@@ -42,10 +43,13 @@ class HomePage extends StatelessWidget {
 
                 // Playlist Horizontal Slider (../Widgets/musicHList.dart)
                 musicHList(),
+                SizedBox(
+                  height: 100,
+                ),
               ],
             ),
-          ),
-        ],
+          ],
+        ),
       ),
       bottomSheet: BottomSheet(
           onClosing: () {},
@@ -81,7 +85,10 @@ class HomePage extends StatelessWidget {
                         )
                       ],
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (context) => Player()));
+                    },
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
