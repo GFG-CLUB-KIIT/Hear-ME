@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       // TODO: Implement Drawer
-      drawer:drawer(), 
+      drawer: drawer(),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   InkWell(
-                                      child: Row(
+                    child: Row(
                       children: [
                         Image.asset(
                           "Assets/Images/monsters-go-bump.jpg",
@@ -81,9 +81,7 @@ class HomePage extends StatelessWidget {
                         )
                       ],
                     ),
-                    onTap: (){
-                      
-                    },
+                    onTap: () {},
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
