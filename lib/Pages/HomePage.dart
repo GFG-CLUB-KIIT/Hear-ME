@@ -1,3 +1,4 @@
+import 'package:HearMe/Widgets/playControl.dart';
 import 'package:flutter/material.dart';
 
 import '../Widgets/label.dart';
@@ -9,9 +10,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      backgroundColor: Color.fromRGBO(9, 18, 39, 1),
       appBar: AppBar(
-        
+        backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text("Hear Me"),
         actions: [
@@ -24,11 +25,9 @@ class HomePage extends StatelessWidget {
       // TODO: Implement Drawer
       drawer: drawer(),
       body: Container(
-        decoration: BoxDecoration(gradient: LinearGradient(colors: [Color.fromRGBO(9,18,39,1),Color.fromRGBO(9, 9, 9, 1.0)])),
-              child: SingleChildScrollView(
-          
+        //decoration: BoxDecoration(gradient: LinearGradient(colors: [Color.fromRGBO(9,18,39,1),Color.fromRGBO(9, 9, 9, 1.0)])),
+        child: SingleChildScrollView(
           child: Stack(
-            
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,10 +58,11 @@ class HomePage extends StatelessWidget {
         ),
       ),
       bottomSheet: BottomSheet(
+          backgroundColor: Colors.transparent,
           onClosing: () {},
           builder: (BuildContext context) {
             return Container(
-              
+              color: Color.fromRGBO(9, 18, 39, 1),
               height: 60,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -94,27 +94,11 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     onTap: () {
-                      Navigator.pushReplacement(context,
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Player()));
                     },
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Icon(
-                        Icons.arrow_left,
-                        size: 40,
-                      ),
-                      Icon(
-                        Icons.pause,
-                        size: 40,
-                      ),
-                      Icon(
-                        Icons.arrow_right,
-                        size: 40,
-                      ),
-                    ],
-                  )
+                  playControl(MainAxisAlignment.spaceBetween),
                 ],
               ),
             );
