@@ -1,3 +1,4 @@
+import 'package:HearMe/API/saavn.dart';
 import 'package:HearMe/Pages/searchList.dart';
 import 'package:HearMe/Widgets/playControl.dart';
 import 'package:flutter/material.dart';
@@ -22,8 +23,8 @@ class HomePage extends StatelessWidget {
             child: IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => SearchList()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SearchList()));
               },
             ),
           ),
@@ -46,15 +47,27 @@ class HomePage extends StatelessWidget {
                   label("Recommended for you"),
                   /* 
                     Recommended For You
-                Horizontal Slider (ListView) (../Widgets/musicHList.dart)
+                    //TODO: Dynamic implimentation
+                  
               */
-                  musicHList(),
+
+                  //Top songs
+                  label("Top Songs"),
+                  FutureBuilder(
+                    future: topSongs(),
+                    builder: (context, snapshot) {
+                      if (!snapshot.hasData) {
+                        return Center(
+                          child: CircularProgressIndicator(),
+                        );
+                      }
+                      return musicHList(snapshot.data);
+                    },
+                  ),
 
                   // My Playlist Label
                   label("My Playlist"),
 
-                  // Playlist Horizontal Slider (../Widgets/musicHList.dart)
-                  musicHList(),
                   SizedBox(
                     height: 100,
                   ),
