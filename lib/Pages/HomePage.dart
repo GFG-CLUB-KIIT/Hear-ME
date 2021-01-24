@@ -1,3 +1,4 @@
+import 'package:HearMe/Pages/searchList.dart';
 import 'package:HearMe/Widgets/playControl.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,13 @@ class HomePage extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Icon(Icons.search),
+            child: IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => SearchList()));
+              },
+            ),
           ),
         ],
       ),
