@@ -1,3 +1,4 @@
+import 'package:HearMe/Pages/Login.dart';
 import 'package:flutter/material.dart';
 import './Pages/HomePage.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark,
       title: "Hear Me",
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }

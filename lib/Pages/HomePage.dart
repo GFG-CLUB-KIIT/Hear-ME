@@ -7,6 +7,8 @@ import '../Widgets/label.dart';
 import '../Widgets/musicHList.dart';
 import '../Utils/drawer.dart';
 import './Player.dart';
+import './Login.dart';
+
 
 class HomePage extends StatelessWidget {
   @override
