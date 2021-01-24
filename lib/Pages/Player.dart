@@ -16,8 +16,7 @@ class Player extends StatelessWidget {
       body: Container(
           child: ListView(
         children: [
-          // TODO:Music List Images;
-          musicHList(),
+          // TODO:Music List Images;         
           ListTile(
             title: Center(child: Text("Monsters Go Bump")),
             subtitle: Center(child: Text("ERIKA RECINOS")),

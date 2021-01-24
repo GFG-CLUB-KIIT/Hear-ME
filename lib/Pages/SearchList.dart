@@ -13,8 +13,18 @@ class _SearchListState extends State<SearchList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color.fromRGBO(9, 18, 39, 1),
         appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
           title: TextField(
+            onChanged: (value) async {
+              var songLists = await fetchSongsList(value);
+              setState(() {
+                songList = songLists;
+                print(songList);
+              });
+            },
             controller: searchController,
             decoration: InputDecoration(
               hintText: "Search",
@@ -24,7 +34,6 @@ class _SearchListState extends State<SearchList> {
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () async {
-                //searchController.text = "";
                 var songLists = await fetchSongsList(searchController.text);
                 setState(() {
                   songList = songLists;
@@ -38,29 +47,14 @@ class _SearchListState extends State<SearchList> {
             itemCount: songList.length,
             itemBuilder: (context, index) {
               return Card(
+                  color: Colors.indigo[900],
                   child: ListTile(
-                title: Text(songList.toString()),
-              ));
-            })
-        // body:FutureBuilder(
-        //   future: fetchSongsList(searchController.text) ,
-        //   builder: (context, snapshot) {
-        //         if (snapshot.hasData) {
-        //           return Text("Found");
-        //         } else if (snapshot.hasError) {
-        //           return Text("{snapshot.error}");
-        //         }
-        //         return CircularProgressIndicator();
-        //   // builder:(context,snapshots){
-        //   //   if(snapshots.hasData){
-        //   //     return Container(color:Colors.red);
-        //   //   }
-        //   //   else{
-        //   //     return Container(color:Colors.green);
-        //   //   }
-        //   // },
-        //   },
-        // ),
-        );
+                    title: Text(songList[index]["title"].toString()),
+                    subtitle: Text(songList[index]["more_info"]
+                            ["primary_artists"]
+                        .toString()),
+                    leading: Image.network(songList[index]["image"]),
+                  ));
+            }));
   }
 }

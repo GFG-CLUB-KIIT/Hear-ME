@@ -1,21 +1,14 @@
+// import 'dart:js';
+
 import 'package:flutter/material.dart';
 
-/*
-Single Music TIle
-TODO:
-Width: ?
-Height: ?
-Fetch Music
-*/
-
-Widget musicTile() {
+Widget musicTile(String url, String title, String artist) {
   return Column(
-    mainAxisAlignment: MainAxisAlignment.spaceAround,
     children: [
       // ClipRRect used to provide border radius
       ClipRRect(
-        child: Image.asset(
-          'Assets/Images/monsters-go-bump.jpg',
+        child: Image.network(
+          url,
           width: 200,
           height: 200,
           fit: BoxFit.cover,
@@ -23,13 +16,28 @@ Widget musicTile() {
         borderRadius: BorderRadius.circular(10),
       ),
       // Music Name
-      Text("Monsters Go Bump"),
-      // Artist Name
-      Text(
-        "ERIKA RECINOS",
-        style: TextStyle(
-          color: Colors.grey,
-          fontSize: 10,
+      Container(
+        width: 200,
+        child: ListTile(
+          title: Center(
+              child: Text(
+            title,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 15,
+            ),
+          )),
+          // width: 180,
+          subtitle: Center(
+            child: Text(
+              artist,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.grey[50],
+                fontSize: 10,
+              ),
+            ),
+          ),
         ),
       ),
     ],
