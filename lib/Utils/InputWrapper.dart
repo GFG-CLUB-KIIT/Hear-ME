@@ -1,3 +1,4 @@
+import 'package:HearMe/Pages/ForgotPassward.dart';
 import 'package:flutter/material.dart';
 
 import './../Utils/Button.dart';
@@ -26,7 +27,12 @@ class InputWrapper extends StatelessWidget {
                 "Forgot Password?",
                 style: TextStyle(color: Colors.grey),
               ),
-              onTap: () {}),
+              onTap: () {
+                Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ForgotPassword()),
+                    );
+              }),
           SizedBox(
             height: 40,
           ),
