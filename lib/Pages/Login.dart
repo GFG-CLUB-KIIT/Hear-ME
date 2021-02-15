@@ -21,7 +21,7 @@ class LoginPage extends StatelessWidget {
           children: <Widget>[
             Header(),
             Container(
-              height: MediaQuery.of(context).size.height * .7,
+              //height: MediaQuery.of(context).size.height * .7,
 
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -100,8 +100,6 @@ class LoginPage extends StatelessWidget {
                ),
              ],
            ),
-            )
-
           ],
         ),
       ),
