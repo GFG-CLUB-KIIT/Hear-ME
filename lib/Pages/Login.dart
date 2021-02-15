@@ -7,31 +7,31 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: Container(
-        // width: double.infinity,
-        // height: MediaQuery.of(context).size.height*0.3,
+
         decoration: BoxDecoration(
           gradient: LinearGradient(begin: Alignment.topCenter, colors: [
             Color.fromRGBO(9, 18, 39, 1),
-              Color.fromRGBO(9, 18, 39, 1),
-              Color.fromRGBO(9, 18, 39, 1),
-               
+            Color.fromRGBO(9, 18, 39, 1),
+            Color.fromRGBO(9, 18, 39, 1),
           ]),
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(height: 80,),
             Header(),
             Container(
-              // height: MediaQuery.of(context).size.height*0.7,
+              height: MediaQuery.of(context).size.height * .7,
+
               decoration: BoxDecoration(
                   color: Colors.white,
+                  // color: Colors.green,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
-                  )
-              ),
+                  )),
               child: InputWrapper(),
+
             ),
            Row(
              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -100,6 +100,8 @@ class LoginPage extends StatelessWidget {
                ),
              ],
            ),
+            )
+
           ],
         ),
       ),
