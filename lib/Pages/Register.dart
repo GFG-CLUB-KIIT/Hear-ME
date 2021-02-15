@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-
 import './../Utils/Header.dart';
-import './../Utils/InputWrapper.dart';
-import 'Register.dart';
+// import './../Utils/InputWrapper.dart';
+import './../Utils/RegisterFields.dart';
 
-class LoginPage extends StatelessWidget {
+class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,10 +18,9 @@ class LoginPage extends StatelessWidget {
         ),
         child: Column(
           children: <Widget>[
-            Header("Login"),
+            Header("Register"),
             Container(
-              //height: MediaQuery.of(context).size.height * .7,
-
+              // height: MediaQuery.of(context).size.height * .3,
               decoration: BoxDecoration(
                   color: Colors.white,
                   // color: Colors.green,
@@ -32,17 +30,20 @@ class LoginPage extends StatelessWidget {
                     bottomLeft: Radius.circular(60),
                     bottomRight: Radius.circular(60),
                   )),
-              child: InputWrapper(),
+              child: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: RegisterFields(),
+              ),
             ),
             SizedBox(
-              height: 40,
+              height: 25,
             ),
-            Row(
+            Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 InkWell(
                     child: Container(
-                        width: MediaQuery.of(context).size.width / 2.5,
+                        width: MediaQuery.of(context).size.width * 0.7,
                         height: MediaQuery.of(context).size.height / 18,
                         margin: EdgeInsets.only(top: 25),
                         decoration: BoxDecoration(
@@ -73,30 +74,6 @@ class LoginPage extends StatelessWidget {
                           ],
                         ))),
                     onTap: () {}),
-                InkWell(
-                  child: Container(
-                      width: MediaQuery.of(context).size.width / 2.5,
-                      height: MediaQuery.of(context).size.height / 18,
-                      margin: EdgeInsets.only(top: 25),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.white),
-                      child: Center(
-                        child: Text(
-                          'Register',
-                          style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black),
-                        ),
-                      )),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => RegisterScreen()),
-                    );
-                  },
-                ),
               ],
             ),
           ],
