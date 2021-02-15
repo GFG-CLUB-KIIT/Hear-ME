@@ -21,10 +21,12 @@ class InputWrapper extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          Text(
-            "Forgot Password?",
-            style: TextStyle(color: Colors.grey),
-          ),
+          InkWell(
+              child: Text(
+                "Forgot Password?",
+                style: TextStyle(color: Colors.grey),
+              ),
+              onTap: () {}),
           SizedBox(
             height: 40,
           ),

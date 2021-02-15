@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
+  final String header;
+  Header(this.header);
+
   @override
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      height: MediaQuery.of(context).size.height * .3,
+      height: MediaQuery.of(context).size.height * .25,
       padding: EdgeInsets.all(20),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -13,7 +16,7 @@ class Header extends StatelessWidget {
         children: <Widget>[
           Center(
             child: Text(
-              "Login",
+              header,
               style: TextStyle(color: Colors.white, fontSize: 40),
             ),
           ),
@@ -22,7 +25,7 @@ class Header extends StatelessWidget {
           ),
           Center(
             child: Text(
-              "Welcome to Inside Android",
+              "Welcome to Hear Me",
               style: TextStyle(color: Colors.white, fontSize: 18),
             ),
           )
