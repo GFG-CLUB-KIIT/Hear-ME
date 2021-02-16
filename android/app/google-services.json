@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "761610123138",
+    "project_id": "hear-me-69ad7",
+    "storage_bucket": "hear-me-69ad7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761610123138:android:ace9cd302f8e6c7397019b",
+        "android_client_info": {
+          "package_name": "gfg.HearMe.aadn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761610123138-63pdinpuhhu7j3pg8jkq1lt7eok6asug.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gfg.HearMe.aadn",
+            "certificate_hash": "9dafb34743485c0a72d30e5e07f182e346a4914a"
+          }
+        },
+        {
+          "client_id": "761610123138-j5b2rtdunb99k71nf3g3nuveeo095dhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwvDSHBECUUZEzGzLFMlDuDtKaQjwXYDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761610123138-j5b2rtdunb99k71nf3g3nuveeo095dhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

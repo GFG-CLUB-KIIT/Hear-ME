@@ -1,6 +1,8 @@
+import 'package:HearMe/Utils/Authentication.dart';
 import 'package:flutter/material.dart';
+import '../Pages/Login.dart';
 
-Widget drawer() {
+Widget drawer(BuildContext context) {
   return Drawer(
 
     child: ListView(
@@ -42,6 +44,23 @@ Widget drawer() {
             Icons.settings,
           ),
           title: Text("Setting", style: TextStyle(fontSize: 20.0)),
+        ),
+        ListTile(
+          onTap: () async{
+            if (await signOutUser()) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => LoginPage()),
+                        );
+                      }
+                      else{
+                        print("Sign in not done");
+                      }
+          },
+          leading: Icon(
+            Icons.settings,
+          ),
+          title: Text("Sign out", style: TextStyle(fontSize: 20.0)),
         )
         //Text("Home"),
       ],

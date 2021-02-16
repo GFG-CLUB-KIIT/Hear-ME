@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       // TODO: Implement Drawer
-      drawer: drawer(),
+      drawer: drawer(context),
       body: Container(
         //decoration: BoxDecoration(gradient: LinearGradient(colors: [Color.fromRGBO(9,18,39,1),Color.fromRGBO(9, 9, 9, 1.0)])),
         child: SingleChildScrollView(

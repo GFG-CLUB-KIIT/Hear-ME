@@ -1,7 +1,9 @@
+import 'package:HearMe/Utils/Authentication.dart';
 import 'package:flutter/material.dart';
 
 import './../Utils/Header.dart';
 import './../Utils/InputWrapper.dart';
+import 'HomePage.dart';
 import 'Register.dart';
 
 class LoginPage extends StatelessWidget {
@@ -72,7 +74,18 @@ class LoginPage extends StatelessWidget {
                             ),
                           ],
                         ))),
-                    onTap: () {}),
+                    onTap: () async {
+                      if (await googleSignInAccount()) {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HomePage()),
+                        );
+                      }
+                      else{
+                        print("Sign in not done");
+                      }
+                      
+                    }),
                 InkWell(
                   child: Container(
                       width: MediaQuery.of(context).size.width / 2.5,
