@@ -28,7 +28,10 @@ Future<bool> googleSignInAccount() async {
 }
 
 Future<bool> isUserAvaliable() async {
-  return await googleSignIn.isSignedIn();
+  if(auth.currentUser !=null) {
+    return Future.value(true); 
+  }
+  return Future.value(false);
 }
 
 Future<bool> signOutUser() async {
