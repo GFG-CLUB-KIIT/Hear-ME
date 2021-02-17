@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "761610123138-7ns8smferjfuim36vbmj7e8focv4t96j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gfg.HearMe.aadn",
+            "certificate_hash": "633da546428b542c5ef19cb8f51c00595652d1ed"
+          }
+        },
+        {
           "client_id": "761610123138-j5b2rtdunb99k71nf3g3nuveeo095dhu.apps.googleusercontent.com",
           "client_type": 3
         }
