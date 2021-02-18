@@ -13,9 +13,9 @@ class _LoginPageState extends State<LoginPage> {
   RegExp regExp = RegExp(
       r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9][a-zA-Z0-9-]{0,253}\.)*[a-zA-Z0-9][a-zA-Z0-9-]{0,253}\.[a-zA-Z0-9]{2,}$");
 
-  String email ;
+  String email;
 
-  String password ;
+  String password;
 
   final _formKey = GlobalKey<FormState>();
 
@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                                     return null;
                                   }
                                 },
-                                onChanged: (value){
+                                onChanged: (value) {
                                   email = value;
                                 },
                                 style: TextStyle(color: Colors.black),
@@ -120,14 +120,14 @@ class _LoginPageState extends State<LoginPage> {
                                       bottom:
                                           BorderSide(color: Colors.grey[200]))),
                               child: TextFormField(
-                                 validator: (value) {
+                                validator: (value) {
                                   if (value.length <= 6) {
                                     return "Password too short";
                                   } else {
                                     return null;
                                   }
                                 },
-                                onChanged: (value){
+                                onChanged: (value) {
                                   password = value;
                                 },
                                 style: TextStyle(color: Colors.black),
@@ -160,15 +160,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          if (_formKey.currentState.validate()){
-                            
-                          }
-
-
-
-
-
-
+                          if (_formKey.currentState.validate()) {}
                           // String emailEntered = email;
                           // String passwordEntered = password;
                           // if (emailSignIn(
