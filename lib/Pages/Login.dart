@@ -1,12 +1,22 @@
 import 'package:HearMe/Utils/Authentication.dart';
 import 'package:flutter/material.dart';
-
-import './../Utils/Header.dart';
-import './../Utils/InputWrapper.dart';
+import 'ForgotPassward.dart';
 import 'HomePage.dart';
 import 'Register.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  RegExp regExp = RegExp(
+      r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9][a-zA-Z0-9-]{0,253}\.)*[a-zA-Z0-9][a-zA-Z0-9-]{0,253}\.[a-zA-Z0-9]{2,}$");
+
+  TextEditingController email = new TextEditingController();
+
+  TextEditingController password = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +31,33 @@ class LoginPage extends StatelessWidget {
         ),
         child: Column(
           children: <Widget>[
-            Header("Login"),
+            Container(
+              margin: EdgeInsets.only(top:35),
+              alignment: Alignment.center,
+              height: MediaQuery.of(context).size.height * .25,
+              padding: EdgeInsets.all(10),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Center(
+                    child: Text(
+                      "LOGIN",
+                      style: TextStyle(color: Colors.white, fontSize: 40),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Center(
+                    child: Text(
+                      "Welcome to Hear Me",
+                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  )
+                ],
+              ),
+            ),
             Container(
               //height: MediaQuery.of(context).size.height * .7,
 
@@ -34,18 +70,115 @@ class LoginPage extends StatelessWidget {
                     bottomLeft: Radius.circular(60),
                     bottomRight: Radius.circular(60),
                   )),
-              child: InputWrapper(),
+              child: Padding(
+                padding: EdgeInsets.all(30),
+                child: Column(
+                  children: <Widget>[
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                                border: Border(
+                                    bottom:
+                                        BorderSide(color: Colors.grey[200]))),
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              controller: email,
+                              decoration: InputDecoration(
+                                  hintText: "Enter your email",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: InputBorder.none),
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                                border: Border(
+                                    bottom:
+                                        BorderSide(color: Colors.grey[200]))),
+                            child: TextField(
+                              style: TextStyle(color: Colors.black),
+                              controller: password,
+                              decoration: InputDecoration(
+                                  hintText: "Enter your password",
+                                  hintStyle: TextStyle(color: Colors.grey),
+                                  border: InputBorder.none),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    InkWell(
+                        child: Text(
+                          "Forgot Password?",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ForgotPassword()),
+                          );
+                        }),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        String emailEntered = email.text;
+                        String passwordEntered = password.text;
+                        if (emailSignIn(
+                                emailEntered, passwordEntered, context) !=
+                            null) {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          );
+                        }
+                      },
+                      child: Container(
+                        height: 50,
+                        margin: EdgeInsets.symmetric(horizontal: 80),
+                        decoration: BoxDecoration(
+                          color: Colors.cyan[500],
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Center(
+                          child: Text(
+                            "Login",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
             SizedBox(
-              height: 40,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                // 
+                //
                 InkWell(
                   child: Container(
-                      width: MediaQuery.of(context).size.width / 2.5,
+                      width: MediaQuery.of(context).size.width / 1.6,
                       height: MediaQuery.of(context).size.height / 18,
                       margin: EdgeInsets.only(top: 25),
                       decoration: BoxDecoration(
