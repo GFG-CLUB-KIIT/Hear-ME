@@ -52,6 +52,14 @@ Future<void> resetPassword(String email) async {
   await auth.sendPasswordResetEmail(email: email);
 }
 
+Future<bool> isUserAvailable() async {
+  return auth.currentUser != null ? true : false;
+}
+
+Future<User> getUserDetail() async {
+  return auth.currentUser;
+}
+
 showAlertDialog(String message, BuildContext context) {
   // show the dialog
   showDialog(

@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark,
       title: "Hear Me",
-      home: LoginPage(),
+      home: IsUserLogedIn(),
     );
   }
 }
@@ -42,16 +42,13 @@ class _IsUserLogedInState extends State<IsUserLogedIn> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<bool>(
-      //TODO:
-      // future: isUserAvaliable(),
+      future: isUserAvailable(),
       builder: (context, snapshot) {
-        // if (snapshot.data == true) {
-        //   // User user = snapshot.data;
-        //   return HomePage();
-        // } else {
-        //   return HomePage();
-        // }
-        return HomePage();
+        if (snapshot.data == true) {
+          return HomePage();
+        } else {
+          return LoginPage();
+        }
       },
     );
   }
