@@ -1,6 +1,7 @@
 import 'package:HearMe/Utils/Authentication.dart';
 import 'package:flutter/material.dart';
 import '../Pages/Login.dart';
+import '../Pages/Developers.dart';
 
 Widget drawer(BuildContext context) {
   return Drawer(
@@ -37,6 +38,18 @@ Widget drawer(BuildContext context) {
             Icons.thumb_up,
           ),
           title: Text("Liked Songs", style: TextStyle(fontSize: 20.0)),
+        ),
+        ListTile(
+          leading: Icon(
+            Icons.supervisor_account,
+          ),
+          title: Text("Developers", style: TextStyle(fontSize: 20.0)),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Developers()),
+            );
+          },
         ),
         ListTile(
           leading: Icon(
