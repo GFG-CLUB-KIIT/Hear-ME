@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import './../Utils/Authentication.dart';
 // import './../Utils/InputWrapper.dart';
 
 import 'HomePage.dart';
@@ -165,22 +165,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               ),
                             )),
                         //TODO:
-                        onTap: () {
-                          if (_formKey.currentState.validate()) {}
-                          // String emailEntered = email.text;
-                          // String passwordEntered = password.text;
-                          // String passswordReEntered = reEnteredPasssword.text;
-                          // if (passwordEntered == passswordReEntered) {
-                          //   if (emailSignUp(
-                          //           emailEntered, passwordEntered, context) !=
-                          //       null) {
-                          //     Navigator.push(
-                          //       context,
-                          //       MaterialPageRoute(
-                          //           builder: (context) => HomePage()),
-                          //     );
-                          //   }
-                          // }
+                        onTap: () async {
+                          if (_formKey.currentState.validate()) {
+                            if (await emailSignUp(email, password, context) != null) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomePage()),
+                              );
+                            }
+                          }
                         },
                       ),
                     ],

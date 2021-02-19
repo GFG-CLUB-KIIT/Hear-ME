@@ -159,19 +159,17 @@ class _LoginPageState extends State<LoginPage> {
                         height: 40,
                       ),
                       GestureDetector(
-                        onTap: () {
-                          if (_formKey.currentState.validate()) {}
-                          // String emailEntered = email;
-                          // String passwordEntered = password;
-                          // if (emailSignIn(
-                          //         emailEntered, passwordEntered, context) !=
-                          //     null) {
-                          //   Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) => HomePage()),
-                          //   );
-                          // }
+                        onTap: () async {
+                          if (_formKey.currentState.validate()) {
+                            if ((await emailSignIn(email, password, context)) !=
+                                null) {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomePage()),
+                              );
+                            }
+                          }
                         },
                         child: Container(
                           height: 50,

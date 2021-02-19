@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import '../Utils/Authentication.dart';
 
 class ForgotPassword extends StatefulWidget {
   @override
@@ -91,6 +92,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                           onChanged: (value) {
                             email = value;
                           },
+                          style: TextStyle(color: Colors.black),
                           decoration: InputDecoration(
                               hintText: "Enter your email",
                               hintStyle: TextStyle(color: Colors.grey),
@@ -116,11 +118,10 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                               ),
                             )),
                         onTap: () {
-                          if (_formKey.currentState.validate()) {}
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(builder: (context) => RegisterScreen()),
-                          // );
+                          if (_formKey.currentState.validate()) {
+                            resetPassword(email);
+                          }
+                          Navigator.pop(context);
                         },
                       ),
                     ],
