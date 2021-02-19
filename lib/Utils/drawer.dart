@@ -1,6 +1,7 @@
 import 'package:HearMe/Utils/Authentication.dart';
 import 'package:flutter/material.dart';
 import '../Pages/Login.dart';
+import '../Pages/Playlist.dart';
 
 Widget drawer(BuildContext context) {
   return Drawer(
@@ -29,11 +30,19 @@ Widget drawer(BuildContext context) {
           title: Text("Home", style: TextStyle(fontSize: 20.0)),
         ),
         ListTile(
-          leading: Icon(
-            Icons.music_note,
-          ),
-          title: Text("Play List", style: TextStyle(fontSize: 20.0)),
-        ),
+            leading: Icon(
+              Icons.music_note,
+            ),
+            title: Text(
+              "Playlist",
+              style: TextStyle(fontSize: 20.0),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Playlist()),
+              );
+            }),
         ListTile(
           leading: Icon(
             Icons.thumb_up,
