@@ -1,11 +1,10 @@
 import 'package:HearMe/Pages/Login.dart';
 import 'package:HearMe/Utils/Authentication.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import './Pages/HomePage.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
@@ -49,7 +48,7 @@ class _IsUserLogedInState extends State<IsUserLogedIn> {
           // User user = snapshot.data;
           return HomePage();
         } else {
-          return LoginPage();
+          return HomePage();
         }
       },
     );
