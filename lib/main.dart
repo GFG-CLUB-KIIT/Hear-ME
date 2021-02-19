@@ -24,6 +24,9 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark,
       title: "Hear Me",
+
+      // home: HomePage(),
+
       home: IsUserLogedIn(),
     );
   }
