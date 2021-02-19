@@ -8,9 +8,11 @@ Widget drawer(BuildContext context) {
     child: ListView(
       children: [
         UserAccountsDrawerHeader(
-          accountName: Text("GFG", style: TextStyle(fontSize: 20.0)),
+          accountName: Text(
+              user.displayName == null ? "User" : user.displayName,
+              style: TextStyle(fontSize: 20.0)),
           accountEmail: Text(
-            "gfg@gmail.com",
+            user.email,
             style: TextStyle(fontSize: 15.0),
           ),
           currentAccountPicture: CircleAvatar(
@@ -55,17 +57,18 @@ Widget drawer(BuildContext context) {
         ),
         ListTile(
           //TODO:
-          // onTap: () async{
-          //   if (await signOutUser()) {
-          //               Navigator.push(
-          //                 context,
-          //                 MaterialPageRoute(builder: (context) => LoginPage()),
-          //               );
-          //             }
-          //             else{
-          //               print("Sign in not done");
-          //             }
-          // },
+          onTap: () async {
+            await logOut();
+            //   if (await signOutUser()) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
+            //             }
+            //             else{
+            //               print("Sign in not done");
+            //             }
+          },
           leading: Icon(
             Icons.settings,
           ),
