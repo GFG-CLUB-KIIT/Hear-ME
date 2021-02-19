@@ -45,12 +45,13 @@ class _IsUserLogedInState extends State<IsUserLogedIn> {
       //TODO:
       // future: isUserAvaliable(),
       builder: (context, snapshot) {
-        if (snapshot.data == true) {
-          // User user = snapshot.data;
-          return HomePage();
-        } else {
-          return HomePage();
-        }
+        // if (snapshot.data == true) {
+        //   // User user = snapshot.data;
+        //   return HomePage();
+        // } else {
+        //   return HomePage();
+        // }
+        return HomePage();
       },
     );
   }
