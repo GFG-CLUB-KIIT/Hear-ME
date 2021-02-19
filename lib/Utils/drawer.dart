@@ -9,12 +9,28 @@ Widget drawer(BuildContext context) {
     child: ListView(
       children: [
         UserAccountsDrawerHeader(
-          accountName: Text(
-              user.displayName == null ? "User" : user.displayName,
-              style: TextStyle(fontSize: 20.0)),
-          accountEmail: Text(
-            user.email,
-            style: TextStyle(fontSize: 15.0),
+          accountName: FutureBuilder(
+            future: getUserDetail(),
+            builder: (context, snapasht) {
+              if (snapasht.hasData) {
+                return Text(
+                    user.displayName == null ? "User" : user.displayName,
+                    style: TextStyle(fontSize: 20.0));
+              } else {
+                return Text("User", style: TextStyle(fontSize: 20.0));
+              }
+            },
+          ),
+          accountEmail: FutureBuilder(
+            future: getUserDetail(),
+            builder: (context, snapasht) {
+              if (snapasht.hasData) {
+                return Text(user.email == null ? "User" : user.email,
+                    style: TextStyle(fontSize: 20.0));
+              } else {
+                return Text("", style: TextStyle(fontSize: 20.0));
+              }
+            },
           ),
           currentAccountPicture: CircleAvatar(
             backgroundColor: Colors.greenAccent,
