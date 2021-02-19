@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark,
       title: "Hear Me",
-      home: IsUserLogedIn(),
+      home: LoginPage(),
     );
   }
 }
@@ -42,7 +42,8 @@ class _IsUserLogedInState extends State<IsUserLogedIn> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<bool>(
-      future: isUserAvaliable(),
+      //TODO:
+      // future: isUserAvaliable(),
       builder: (context, snapshot) {
         if (snapshot.data == true) {
           // User user = snapshot.data;

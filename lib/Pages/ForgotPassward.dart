@@ -1,6 +1,17 @@
 import "package:flutter/material.dart";
 
-class ForgotPassword extends StatelessWidget {
+class ForgotPassword extends StatefulWidget {
+  @override
+  _ForgotPasswordState createState() => _ForgotPasswordState();
+}
+
+class _ForgotPasswordState extends State<ForgotPassword> {
+  RegExp regExp = RegExp(
+      r"^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9][a-zA-Z0-9-]{0,253}\.)*[a-zA-Z0-9][a-zA-Z0-9-]{0,253}\.[a-zA-Z0-9]{2,}$");
+
+  String email;
+
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -58,46 +69,62 @@ class ForgotPassword extends StatelessWidget {
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                          border: Border(
-                              bottom: BorderSide(color: Colors.grey[200]))),
-                      child: TextField(
-                        decoration: InputDecoration(
-                            hintText: "Enter your email",
-                            hintStyle: TextStyle(color: Colors.grey),
-                            border: InputBorder.none),
+                child: Form(
+                  key: _formKey,
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                            border: Border(
+                                bottom: BorderSide(color: Colors.grey[200]))),
+                        child: TextFormField(
+                          validator: (value) {
+                            if (value.length <= 0) {
+                              return "Enter Email";
+                            } else if (!regExp.hasMatch(value)) {
+                              return "Invalid Email";
+                            } else {
+                              return null;
+                            }
+                          },
+                          onChanged: (value) {
+                            email = value;
+                          },
+                          decoration: InputDecoration(
+                              hintText: "Enter your email",
+                              hintStyle: TextStyle(color: Colors.grey),
+                              border: InputBorder.none),
+                        ),
                       ),
-                    ),
-                    InkWell(
-                      child: Container(
-                          width: MediaQuery.of(context).size.width / 2.5,
-                          height: MediaQuery.of(context).size.height / 18,
-                          margin: EdgeInsets.only(top: 25),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.blue,
-                          ),
-                          child: Center(
-                            child: Text(
-                              'Reset',
-                              style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
+                      InkWell(
+                        child: Container(
+                            width: MediaQuery.of(context).size.width / 2.5,
+                            height: MediaQuery.of(context).size.height / 18,
+                            margin: EdgeInsets.only(top: 25),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              color: Colors.blue,
                             ),
-                          )),
-                      onTap: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(builder: (context) => RegisterScreen()),
-                        // );
-                      },
-                    ),
-                  ],
+                            child: Center(
+                              child: Text(
+                                'Reset',
+                                style: TextStyle(
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            )),
+                        onTap: () {
+                          if (_formKey.currentState.validate()) {}
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(builder: (context) => RegisterScreen()),
+                          // );
+                        },
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
