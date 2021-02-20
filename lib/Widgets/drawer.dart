@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../Pages/login.dart';
 import '../Pages/playlist.dart';
 import '../Pages/developers.dart';
+import '../Pages/likedSongs.dart';
 
 Widget drawer(BuildContext context) {
   return Drawer(
@@ -61,11 +62,19 @@ Widget drawer(BuildContext context) {
               );
             }),
         ListTile(
-          leading: Icon(
-            Icons.thumb_up,
-          ),
-          title: Text("Liked Songs", style: TextStyle(fontSize: 20.0)),
-        ),
+            leading: Icon(
+              Icons.thumb_up,
+            ),
+            title: Text(
+              "Liked Songs",
+              style: TextStyle(fontSize: 20.0),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LikedSongs()),
+              );
+            }),
         ListTile(
           leading: Icon(
             Icons.supervisor_account,
