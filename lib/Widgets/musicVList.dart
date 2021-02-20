@@ -11,7 +11,7 @@ Widget musicVList(BuildContext context, var data) {
       vertical: 10.0,
       horizontal: 10.0,
     ),
-    height: MediaQuery.of(context).size.height * 0.72,
+    height: MediaQuery.of(context).size.height * 0.8,
     child: GridView.count(
       crossAxisCount: 2,
       mainAxisSpacing: 10,

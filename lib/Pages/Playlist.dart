@@ -3,7 +3,6 @@ import 'package:HearMe/Pages/searchList.dart';
 import 'package:HearMe/Widgets/playControl.dart';
 import 'package:flutter/material.dart';
 
-import '../Widgets/label.dart';
 import '../Widgets/musicVList.dart';
 import 'player.dart';
 
@@ -15,6 +14,7 @@ class Playlist extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        title: Center(child: Text("Playlist")),
         actions: [
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -32,26 +32,16 @@ class Playlist extends StatelessWidget {
         child: SingleChildScrollView(
           child: Stack(
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // User Defined Widget in ../Widgets/label.dart
-                  /*
-                    lable function provides a way to reuse the code. 
-                  */
-                  label("Playlist"),
-                  FutureBuilder(
-                    future: topSongs(),
-                    builder: (context, snapshot) {
-                      if (!snapshot.hasData) {
-                        return Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      }
-                      return musicVList(context, snapshot.data);
-                    },
-                  ),
-                ],
+              FutureBuilder(
+                future: topSongs(),
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
+                  return musicVList(context, snapshot.data);
+                },
               ),
             ],
           ),
