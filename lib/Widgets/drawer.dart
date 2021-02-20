@@ -1,8 +1,8 @@
-import 'package:HearMe/Utils/Authentication.dart';
+import 'package:HearMe/Utils/authentication.dart';
 import 'package:flutter/material.dart';
-import '../Pages/Login.dart';
-import '../Pages/Playlist.dart';
-import '../Pages/Developers.dart';
+import '../Pages/login.dart';
+import '../Pages/playlist.dart';
+import '../Pages/developers.dart';
 
 Widget drawer(BuildContext context) {
   return Drawer(

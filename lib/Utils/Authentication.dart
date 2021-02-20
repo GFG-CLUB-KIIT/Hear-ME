@@ -1,4 +1,4 @@
-import 'package:HearMe/Pages/HomePage.dart';
+import 'package:HearMe/Pages/homePage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

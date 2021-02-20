@@ -43,6 +43,37 @@ class Developers extends StatelessWidget {
 }
 
 class AboutCards extends StatelessWidget {
+  List<Map<String, String>> data = [
+    {
+      'name': 'Alok Kumar Patel',
+      'subtitle': 'Flutter Developer',
+      'githubURL': 'https://github.com/',
+      'instagramURL': 'https://instagram.com',
+      'profileURL': 'https://bit.ly/2NBn2Qh',
+    },
+    {
+      'name': 'Divyanshu Shekhar',
+      'subtitle': 'Flutter Developer',
+      'githubURL': 'https://github.com/',
+      'instagramURL': 'https://instagram.com',
+      'profileURL':
+          'https://divyanshushekhar.com/wp-content/uploads/2020/03/Divyanshu-Shekhar.png',
+    },
+    {
+      'name': 'Ashish Kumar Mishra',
+      'subtitle': 'Flutter Developer',
+      'githubURL': 'https://github.com/',
+      'instagramURL': 'https://instagram.com',
+      'profileURL': 'https://bit.ly/2M5qRNb',
+    },
+    {
+      'name': 'Nitish Kumar Sonathalia',
+      'subtitle': 'Android Developer',
+      'githubURL': 'https://github.com/',
+      'instagramURL': 'https://instagram.com',
+      'profileURL': 'https://bit.ly/3qCPPCy',
+    },
+  ];
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -83,7 +114,13 @@ class AboutCards extends StatelessWidget {
             thickness: 0.8,
           ),
         ),
-        Padding(
+        ...developerTile(data),
+      ],
+    );
+  }
+
+  List<Padding> developerTile(List<Map<String, String>> data) {
+    return (data.map((entity) => Padding(
           padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 6),
           child: Card(
             color: Colors.indigo[900],
@@ -98,212 +135,44 @@ class AboutCards extends StatelessWidget {
                   shape: BoxShape.circle,
                   image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: NetworkImage("https://bit.ly/2NBn2Qh"),
+                    image: NetworkImage(entity['profileURL']),
                   ),
                 ),
               ),
               title: Text(
-                'Alok Kumar Patel',
+                entity['name'],
                 // style: TextStyle(color: accentLight),
               ),
               subtitle: Text(
-                'Flutter Developer',
+                entity['subtitle'],
                 // style: TextStyle(color: accentLight),
               ),
               trailing: Wrap(
                 children: <Widget>[
                   IconButton(
                     icon: Icon(
-                      MdiIcons.telegram,
+                      MdiIcons.github,
                       // color: accentLight,
                     ),
-                    tooltip: 'Contact on Telegram',
+                    tooltip: 'GitHub',
                     onPressed: () {
-                      // launchURL("https://telegram.dog/harshv23");
+                      print(entity['githubURL']);
                     },
                   ),
                   IconButton(
                     icon: Icon(
-                      MdiIcons.twitter,
+                      MdiIcons.instagram,
                       // color: accentLight,
                     ),
-                    tooltip: 'Contact on Twitter',
+                    tooltip: 'Contact on Instagram',
                     onPressed: () {
-                      // launchURL("https://twitter.com/harshv23");
+                      print(entity['instagramURL']);
                     },
                   ),
                 ],
               ),
             ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 6),
-          child: Card(
-            color: Colors.indigo[900],
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            elevation: 2.3,
-            child: ListTile(
-              leading: Container(
-                width: 50.0,
-                height: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage(
-                        "https://divyanshushekhar.com/wp-content/uploads/2020/03/Divyanshu-Shekhar.png"),
-                  ),
-                ),
-              ),
-              title: Text(
-                'Divyanshu Shekhar',
-                // style: TextStyle(color: accentLight),
-              ),
-              subtitle: Text(
-                'Android Developer',
-                // style: TextStyle(color: accentLight),
-              ),
-              trailing: Wrap(
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.telegram,
-                      // color: accentLight,
-                    ),
-                    tooltip: 'Contact on Telegram',
-                    onPressed: () {
-                      // launchURL("https://telegram.dog/cyberboysumanjay");
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.twitter,
-                      // color: accentLight,
-                    ),
-                    tooltip: 'Contact on Twitter',
-                    onPressed: () {
-                      // launchURL("https://twitter.com/cyberboysj");
-                    },
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 6),
-          child: Card(
-            color: Colors.indigo[900],
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            elevation: 2.3,
-            child: ListTile(
-              leading: Container(
-                width: 50.0,
-                height: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage("https://bit.ly/3qCPPCy"),
-                  ),
-                ),
-              ),
-              title: Text(
-                'Nitish Kumar Sonthalia',
-                // style: TextStyle(color: accentLight),
-              ),
-              subtitle: Text(
-                'Android Developer',
-                // style: TextStyle(color: accentLight),
-              ),
-              trailing: Wrap(
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.telegram,
-                      // color: accentLight,
-                    ),
-                    tooltip: 'Contact on Telegram',
-                    onPressed: () {
-                      // launchURL("https://t.me/dhruvanbhalara");
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.twitter,
-                      // color: accentLight,
-                    ),
-                    tooltip: 'Contact on Twitter',
-                    onPressed: () {
-                      // launchURL("https://twitter.com/dhruvanbhalara");
-                    },
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 6),
-          child: Card(
-            color: Colors.indigo[900],
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            elevation: 2.3,
-            child: ListTile(
-              leading: Container(
-                width: 50.0,
-                height: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage("https://bit.ly/2M5qRNb"),
-                  ),
-                ),
-              ),
-              title: Text(
-                'Ashish Kumar Mishra',
-                // style: TextStyle(color: accentLight),
-              ),
-              subtitle: Text(
-                'Android Developer',
-                // style: TextStyle(color: accentLight),
-              ),
-              trailing: Wrap(
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.telegram,
-                      // color: accentLight,
-                    ),
-                    tooltip: 'Contact on Telegram',
-                    onPressed: () {
-                      // launchURL("https://telegram.dog/kapiljhajhria");
-                    },
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.twitter,
-                      // color: accentLight,
-                    ),
-                    tooltip: 'Contact on Twitter',
-                    onPressed: () {
-                      // launchURL("https://twitter.com/kapiljhajhria");
-                    },
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ],
-    );
+        ))).toList();
   }
 }

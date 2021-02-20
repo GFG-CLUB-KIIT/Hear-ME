@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import './../Utils/Authentication.dart';
+import '../Utils/authentication.dart';
 // import './../Utils/InputWrapper.dart';
 
-import 'HomePage.dart';
+import 'homePage.dart';
 
 class RegisterScreen extends StatefulWidget {
   @override

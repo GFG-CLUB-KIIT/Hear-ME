@@ -1,7 +1,7 @@
-import 'package:HearMe/Pages/Login.dart';
-import 'package:HearMe/Utils/Authentication.dart';
+import 'package:HearMe/Pages/login.dart';
+import 'package:HearMe/Utils/authentication.dart';
 import 'package:flutter/material.dart';
-import './Pages/HomePage.dart';
+import 'Pages/homePage.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
@@ -24,9 +24,6 @@ class MyApp extends StatelessWidget {
       ),
       themeMode: ThemeMode.dark,
       title: "Hear Me",
-
-      // home: HomePage(),
-
       home: IsUserLogedIn(),
     );
   }
