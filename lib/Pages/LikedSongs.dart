@@ -15,6 +15,7 @@ class LikedSongs extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        title: Center(child: Text("Liked Songs")),
         actions: [
           Padding(
             padding: const EdgeInsets.all(20.0),
@@ -32,26 +33,16 @@ class LikedSongs extends StatelessWidget {
         child: SingleChildScrollView(
           child: Stack(
             children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // User Defined Widget in ../Widgets/label.dart
-                  /*
-                    lable function provides a way to reuse the code. 
-                  */
-                  label("Liked Songs"),
-                  FutureBuilder(
-                    future: topSongs(),
-                    builder: (context, snapshot) {
-                      if (!snapshot.hasData) {
-                        return Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      }
-                      return musicVList(context, snapshot.data);
-                    },
-                  ),
-                ],
+              FutureBuilder(
+                future: topSongs(),
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
+                  return musicVList(context, snapshot.data);
+                },
               ),
             ],
           ),
