@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../Widgets/musicHList.dart';
 import '../Widgets/playControl.dart';
+
 import 'package:audioplayers/audioplayers.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
@@ -8,7 +9,7 @@ class Player extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(9, 18, 39, 1),
+      backgroundColor: Color.fromRGBO(36, 44, 45, 120),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -19,6 +20,39 @@ class Player extends StatelessWidget {
           child: ListView(
         children: [
           // TODO:Music List Images;
+
+          Stack(
+            children: [
+              Container(
+                width: double.infinity,
+                height: 300,
+                child: Image.asset(
+                  'Assets/Images/monsters-go-bump.jpg',
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                height: 300,
+                color: Colors.black.withOpacity(0.5),
+              ),
+              Center(
+                child: Container(
+                  margin: EdgeInsets.only(top: 20),
+                  height: 250,
+                  width: 250,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(1000.0),
+                    child: Image.asset(
+                      'Assets/Images/monsters-go-bump.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+
           ListTile(
             title: Center(child: Text("Monsters Go Bump")),
             subtitle: Center(child: Text("ERIKA RECINOS")),

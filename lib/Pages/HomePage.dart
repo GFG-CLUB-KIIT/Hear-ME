@@ -9,7 +9,6 @@ import '../Widgets/drawer.dart';
 import 'player.dart';
 import 'login.dart';
 
-
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
