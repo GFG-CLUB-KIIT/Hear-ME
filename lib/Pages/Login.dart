@@ -121,6 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                                       bottom:
                                           BorderSide(color: Colors.grey[200]))),
                               child: TextFormField(
+                                // keyboardType: TextInputType.visiblePassword,
                                 validator: (value) {
                                   if (value.length <= 6) {
                                     return "Password too short";
