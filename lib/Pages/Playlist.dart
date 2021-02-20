@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../Widgets/label.dart';
 import '../Widgets/musicVList.dart';
-import './Player.dart';
+import 'player.dart';
 
 class Playlist extends StatelessWidget {
   @override

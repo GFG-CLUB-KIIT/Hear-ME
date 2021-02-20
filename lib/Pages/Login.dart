@@ -1,8 +1,8 @@
-import 'package:HearMe/Utils/Authentication.dart';
+import 'package:HearMe/Utils/authentication.dart';
 import 'package:flutter/material.dart';
-import 'ForgotPassward.dart';
-import 'HomePage.dart';
-import 'Register.dart';
+import 'forgotPassward.dart';
+import 'homePage.dart';
+import 'register.dart';
 
 class LoginPage extends StatefulWidget {
   @override

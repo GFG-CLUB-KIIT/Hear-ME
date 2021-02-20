@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import '../Utils/Authentication.dart';
+import '../Utils/authentication.dart';
 
 class ForgotPassword extends StatefulWidget {
   @override

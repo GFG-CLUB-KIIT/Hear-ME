@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 
 import '../Widgets/label.dart';
 import '../Widgets/musicHList.dart';
-import '../Utils/drawer.dart';
-import './Player.dart';
-import './Login.dart';
+import '../Widgets/drawer.dart';
+import 'player.dart';
+import 'login.dart';
 
 
 class HomePage extends StatelessWidget {
