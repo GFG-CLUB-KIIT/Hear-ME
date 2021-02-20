@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../Utils/authentication.dart';
 // import './../Utils/InputWrapper.dart';
@@ -164,14 +165,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     color: Colors.white),
                               ),
                             )),
-                        //TODO:
                         onTap: () async {
                           if (_formKey.currentState.validate()) {
-                            if (await emailSignUp(email, password, context) != null) {
+                            User user =
+                                await emailSignUp(email, password, context);
+                            if (user != null) {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomePage()),
+                                    builder: (context) => HomePage(
+                                          user: user,
+                                        )),
                               );
                             }
                           }

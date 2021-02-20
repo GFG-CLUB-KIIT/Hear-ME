@@ -1,38 +1,22 @@
 import 'package:HearMe/Utils/authentication.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../Pages/login.dart';
 import '../Pages/playlist.dart';
 import '../Pages/developers.dart';
 import '../Pages/likedSongs.dart';
 
-Widget drawer(BuildContext context) {
+Widget drawer(BuildContext context, User user) {
   return Drawer(
     child: ListView(
       children: [
         UserAccountsDrawerHeader(
-          accountName: FutureBuilder(
-            future: getUserDetail(),
-            builder: (context, snapasht) {
-              if (snapasht.hasData) {
-                return Text(
-                    user.displayName == null ? "User" : user.displayName,
-                    style: TextStyle(fontSize: 20.0));
-              } else {
-                return Text("User", style: TextStyle(fontSize: 20.0));
-              }
-            },
-          ),
-          accountEmail: FutureBuilder(
-            future: getUserDetail(),
-            builder: (context, snapasht) {
-              if (snapasht.hasData) {
-                return Text(user.email == null ? "User" : user.email,
-                    style: TextStyle(fontSize: 20.0));
-              } else {
-                return Text("", style: TextStyle(fontSize: 20.0));
-              }
-            },
-          ),
+          accountName:
+              Text(user.displayName == null ? "User" : user.displayName,
+                  // "User" : user.displayName,
+                  style: TextStyle(fontSize: 20.0)),
+          accountEmail: Text(user.email == null ? "User" : user.email,
+              style: TextStyle(fontSize: 20.0)),
           currentAccountPicture: CircleAvatar(
             backgroundColor: Colors.greenAccent,
             child: Text(

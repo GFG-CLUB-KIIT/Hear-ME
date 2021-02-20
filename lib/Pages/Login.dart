@@ -1,7 +1,8 @@
-import 'package:HearMe/Utils/authentication.dart';
+import 'package:HearMe/Pages/HomePage.dart';
+import 'package:HearMe/Utils/Authentication.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'forgotPassward.dart';
-import 'homePage.dart';
 import 'register.dart';
 
 class LoginPage extends StatefulWidget {
@@ -161,12 +162,13 @@ class _LoginPageState extends State<LoginPage> {
                       GestureDetector(
                         onTap: () async {
                           if (_formKey.currentState.validate()) {
-                            if ((await emailSignIn(email, password, context)) !=
-                                null) {
+                            User user =
+                                await emailSignIn(email, password, context);
+                            if(user != null){
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomePage()),
+                                    builder: (context) => HomePage(user: user)),
                               );
                             }
                           }
