@@ -1,15 +1,20 @@
 import 'package:HearMe/API/saavn.dart';
 import 'package:HearMe/Pages/searchList.dart';
 import 'package:HearMe/Widgets/playControl.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../Widgets/label.dart';
 import '../Widgets/musicHList.dart';
 import '../Widgets/drawer.dart';
 import 'player.dart';
-import 'login.dart';
 
 class HomePage extends StatelessWidget {
+    const HomePage({
+    Key key,
+    @required this.user,
+  }) : super(key: key);
+  final User user;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +37,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       // TODO: Implement Drawer
-      drawer: drawer(context),
+      drawer: drawer(context, user),
       body: Container(
         //decoration: BoxDecoration(gradient: LinearGradient(colors: [Color.fromRGBO(9,18,39,1),Color.fromRGBO(9, 9, 9, 1.0)])),
         child: SingleChildScrollView(

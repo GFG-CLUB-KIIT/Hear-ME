@@ -1,13 +1,12 @@
-import 'package:HearMe/Pages/login.dart';
-import 'package:HearMe/Utils/authentication.dart';
 import 'package:flutter/material.dart';
-import 'Pages/homePage.dart';
+import 'Pages/Login.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'Pages/HomePage.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
   runApp(MyApp());
 }
 
@@ -25,31 +24,35 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       title: "Hear Me",
       home: IsUserLogedIn(),
+      // home: LoginPage()
     );
   }
 }
 
 class IsUserLogedIn extends StatefulWidget {
-  const IsUserLogedIn({
-    Key key,
-  }) : super(key: key);
+  IsUserLogedIn({Key key}) : super(key: key);
 
   @override
   _IsUserLogedInState createState() => _IsUserLogedInState();
 }
 
 class _IsUserLogedInState extends State<IsUserLogedIn> {
+  FirebaseAuth auth;
+  @override
+  void initState() {
+    auth = FirebaseAuth.instance;
+    print(auth.currentUser.displayName);
+    print(auth.currentUser.email);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<bool>(
-      future: isUserAvailable(),
-      builder: (context, snapshot) {
-        if (snapshot.data == true) {
-          return HomePage();
-        } else {
-          return LoginPage();
-        }
-      },
-    );
+
+    return auth.currentUser != null
+        ? HomePage(
+            user: auth.currentUser,
+          )
+        : LoginPage();
   }
 }

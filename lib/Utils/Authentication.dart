@@ -14,17 +14,9 @@ Future<User> emailSignUp(
     user = userCredential.user;
     return user;
   } on FirebaseAuthException catch (e) {
-    // if (e.code == 'weak-password') {
-    //   print('The password provided is too weak.');
-    // } else if (e.code == 'email-already-in-use') {
-    //   print('The account already exists for that email.');
-    // }
     showAlertDialog(e.code, context);
     return null;
-  } catch (e) {
-    print(e);
   }
-  return null;
 }
 
 Future<User> emailSignIn(
@@ -35,7 +27,7 @@ Future<User> emailSignIn(
     user = userCredential.user;
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => HomePage()),
+      MaterialPageRoute(builder: (context) => HomePage(user: user,)),
     );
     return user;
   } on FirebaseAuthException catch (e) {
@@ -52,11 +44,7 @@ Future<void> resetPassword(String email) async {
   await auth.sendPasswordResetEmail(email: email);
 }
 
-Future<bool> isUserAvailable() async {
-  return auth.currentUser != null ? true : false;
-}
-
-Future<User> getUserDetail() async {
+Future<User> isUserAvailable() async {
   return auth.currentUser;
 }
 
