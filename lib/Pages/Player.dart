@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import '../Widgets/musicHList.dart';
 import '../Widgets/playControl.dart';
-
+import 'package:audioplayers/audioplayers.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class Player extends StatelessWidget {
   @override
@@ -17,7 +18,7 @@ class Player extends StatelessWidget {
       body: Container(
           child: ListView(
         children: [
-          // TODO:Music List Images;         
+          // TODO:Music List Images;
           ListTile(
             title: Center(child: Text("Monsters Go Bump")),
             subtitle: Center(child: Text("ERIKA RECINOS")),
