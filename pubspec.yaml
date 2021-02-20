@@ -29,6 +29,8 @@ dependencies:
   des_plugin: ^0.0.3
   material_design_icons_flutter: 4.0.5855
   url_launcher: ^5.7.10
+  audioplayers: ^0.17.4
+  cached_network_image: ^2.5.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

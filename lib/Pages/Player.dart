@@ -2,11 +2,14 @@ import 'package:flutter/material.dart';
 import '../Widgets/musicHList.dart';
 import '../Widgets/playControl.dart';
 
+import 'package:audioplayers/audioplayers.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
 class Player extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(232222),
+      backgroundColor: Color.fromRGBO(36, 44, 45, 120),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -17,6 +20,7 @@ class Player extends StatelessWidget {
           child: ListView(
         children: [
           // TODO:Music List Images;
+
           Stack(
             children: [
               Container(
@@ -48,6 +52,7 @@ class Player extends StatelessWidget {
               ),
             ],
           ),
+
           ListTile(
             title: Center(child: Text("Monsters Go Bump")),
             subtitle: Center(child: Text("ERIKA RECINOS")),
