@@ -22,9 +22,9 @@ class _PlayerState extends State<Player> {
     'lightVibrantColor': Colors.indigo,
   };
 
-  String imagePath = 'Assets/Images/monsters-go-bump.jpg';
+  String imagePath = 'Assets/Images/tum-hi-ho.jpg';
 
-  ImageProvider image = AssetImage('Assets/Images/monsters-go-bump.jpg');
+  ImageProvider image = AssetImage('Assets/Images/tum-hi-ho.jpg');
 
   @override
   void initState() {
@@ -100,109 +100,111 @@ class _PlayerState extends State<Player> {
               title: Text("Playing now"),
             ),
             body: Container(
-                child: ListView(
-              children: [
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Center(
-                      child: Container(
-                        height: 180,
-                        width: 180,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100.0),
-                          child: Image.asset(
-                            imagePath,
-                            fit: BoxFit.cover,
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                children: [
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Center(
+                        child: Container(
+                          height: 180,
+                          width: 180,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100.0),
+                            child: Image.asset(
+                              imagePath,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Center(
-                      child: Container(
-                        height: 300,
-                        child: Center(
-                          child: SingleCircularSlider(
-                            100,
-                            50,
-                            baseColor: Colors.white.withOpacity(0.3),
-                            selectionColor: color['lightVibrantColor'],
-                            handlerColor: Colors.white,
-                            handlerOutterRadius: 8.0,
-                            secondarySectors: 10,
-                            sliderStrokeWidth: 3.0,
+                      Center(
+                        child: Container(
+                          height: 300,
+                          child: Center(
+                            child: SingleCircularSlider(
+                              100,
+                              50,
+                              baseColor: Colors.white.withOpacity(0.3),
+                              selectionColor: color['lightVibrantColor'],
+                              handlerColor: Colors.white,
+                              handlerOutterRadius: 8.0,
+                              secondarySectors: 10,
+                              sliderStrokeWidth: 3.0,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Positioned(
-                      bottom: 10,
-                      left: 10,
-                      right: 10,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("00:50"),
-                          Text("04:50"),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                ListTile(
-                  leading: Icon(Icons.thumb_up_outlined),
-                  title: Center(child: Text("Monsters Go Bump")),
-                  subtitle: Center(child: Text("ERIKA RECINOS")),
-                  trailing: Icon(Icons.thumb_down_outlined),
-                ),
-                SizedBox(height: 50),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Container(
-                      child: IconButton(
-                        icon: Icon(Icons.loop),
-                        iconSize: 30,
-                        color: color['darkVibrantColor'],
-                        onPressed: () {},
-                      ),
-                      decoration: BoxDecoration(
-                        gradient: gradient,
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(100),
+                      Positioned(
+                        bottom: 10,
+                        left: 10,
+                        right: 10,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("00:50"),
+                            Text("04:50"),
+                          ],
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      width: 200,
-                    ),
-                    Container(
-                      child: IconButton(
-                        icon: GlowIcon(
-                          Icons.shuffle,
-                          glowColor: Colors.blue,
-                          blurRadius: 20,
+                    ],
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.thumb_up_outlined),
+                    title: Center(child: Text("Monsters Go Bump")),
+                    subtitle: Center(child: Text("ERIKA RECINOS")),
+                    trailing: Icon(Icons.thumb_down_outlined),
+                  ),
+                  SizedBox(height: 50),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Container(
+                        child: IconButton(
+                          icon: Icon(Icons.loop),
+                          iconSize: 30,
+                          color: color['darkColor'],
+                          onPressed: () {},
                         ),
-                        iconSize: 30,
-                        color: Colors.white,
-                        onPressed: () {},
-                      ),
-                      decoration: BoxDecoration(
-                        gradient: gradient,
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(100),
+                        decoration: BoxDecoration(
+                          gradient: gradient,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(100),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 20),
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: playControl(MainAxisAlignment.center, color),
-                ),
-              ],
-            )),
+                      SizedBox(
+                        width: 200,
+                      ),
+                      Container(
+                        child: IconButton(
+                          icon: GlowIcon(
+                            Icons.shuffle,
+                            glowColor: Colors.blue,
+                            blurRadius: 20,
+                          ),
+                          iconSize: 30,
+                          color: Colors.white,
+                          onPressed: () {},
+                        ),
+                        decoration: BoxDecoration(
+                          gradient: gradient,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(100),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    child: playControl(MainAxisAlignment.center, color),
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
