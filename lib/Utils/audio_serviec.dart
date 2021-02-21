@@ -4,7 +4,7 @@ import 'package:audio_session/audio_session.dart';
 
 AudioPlayer player;
 
-initPlayList(List<SongModel> songs, int i) async {
+Future<void> initPlayList(List<SongModel> songs, int i) async {
   await player.setAudioSource(
     ConcatenatingAudioSource(
         useLazyPreparation: true,

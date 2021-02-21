@@ -42,8 +42,8 @@ Row playControl(MainAxisAlignment alignment) {
           icon: Icon(Icons.pause),
           iconSize: 50,
           color: Colors.white,
-          onPressed: () {
-            player.playing ? player.pause() : player.pause();
+          onPressed: () async {
+            player.playing ? await player.pause() : await player.play();
           },
         ),
         decoration: decoration,
