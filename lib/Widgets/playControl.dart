@@ -1,25 +1,14 @@
 import 'package:flutter/material.dart';
 import '../Utils/audio_serviec.dart';
 
-Row playControl(MainAxisAlignment alignment) {
-  LinearGradient gradient = LinearGradient(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-      colors: [Colors.indigo.withOpacity(0.6), Colors.black]);
+import './gradients.dart';
 
-  // BoxShadow shadow = BoxShadow(
-  //   color: Colors.grey,
-  //   spreadRadius: 2,
-  //   blurRadius: 2,
-  //   offset: Offset(2, 4),
-  // );
-
+Row playControl(MainAxisAlignment alignment, Map<String, Color> color) {
   BoxDecoration decoration = BoxDecoration(
-    gradient: gradient,
+    gradient: linearGradient(color),
     borderRadius: BorderRadius.all(
       Radius.circular(100),
     ),
-    // boxShadow: [shadow],
   );
 
   return Row(
