@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       backgroundColor: Color.fromRGBO(9, 18, 39, 1),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -104,7 +105,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       bottomSheet: BottomSheet(
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.black,
           onClosing: () {},
           builder: (BuildContext context) {
             return Container(

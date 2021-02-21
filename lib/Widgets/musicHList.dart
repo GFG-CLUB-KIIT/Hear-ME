@@ -17,13 +17,13 @@ Widget musicHList(var data) {
     // ListView.separated to separate the Horizontal Tile
     child: ListView.separated(
       physics: BouncingScrollPhysics(),
-      shrinkWrap: true,
       // Scroll Direction Horizontal
       scrollDirection: Axis.horizontal,
       itemCount: data.length,
 
       itemBuilder: (BuildContext context, int index) {
         // imageTile - User Defined Widget (../Widgets/imageTile.dart)
+
         return musicTile(
           data[index].imageURL,
           data[index].title,
