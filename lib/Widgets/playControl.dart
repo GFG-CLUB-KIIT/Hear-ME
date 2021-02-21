@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Utils/audio_serviec.dart';
 
 Row playControl(MainAxisAlignment alignment) {
   LinearGradient gradient = LinearGradient(
@@ -41,7 +42,9 @@ Row playControl(MainAxisAlignment alignment) {
           icon: Icon(Icons.pause),
           iconSize: 50,
           color: Colors.white,
-          onPressed: () {},
+          onPressed: () {
+            player.playing ? player.pause() : player.pause();
+          },
         ),
         decoration: decoration,
       ),
