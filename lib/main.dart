@@ -10,6 +10,8 @@ void main() async {
   await Firebase.initializeApp();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
+    systemNavigationBarColor: Color.fromRGBO(9, 18, 39, 1),
+    systemNavigationBarIconBrightness: Brightness.light,
   ));
   runApp(MyApp());
 }

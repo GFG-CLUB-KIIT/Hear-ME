@@ -23,9 +23,9 @@ class _PlayerState extends State<Player> {
     'lightVibrantColor': Colors.indigo,
   };
 
-  String imagePath = 'Assets/Images/tera-zikr.jpg';
+  String imagePath = 'Assets/Images/tum-hi-ho.jpg';
 
-  ImageProvider image = AssetImage('Assets/Images/tera-zikr.jpg');
+  ImageProvider image = AssetImage('Assets/Images/tum-hi-ho.jpg');
 
   @override
   void initState() {
@@ -101,29 +101,30 @@ class _PlayerState extends State<Player> {
               title: Text("Playing now"),
             ),
             body: Container(
-                child: ListView(
-              children: [
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Center(
-                      child: Container(
-                        height: 180,
-                        width: 180,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(100.0),
-                          child: Image.asset(
-                            imagePath,
-                            fit: BoxFit.cover,
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                children: [
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Center(
+                        child: Container(
+                          height: 180,
+                          width: 180,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(100.0),
+                            child: Image.asset(
+                              imagePath,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Center(
-                      child: Container(
-                        height: 300,
-                        child: Center(
-                          child: StreamBuilder<Duration>(
+                      Center(
+                        child: Container(
+                          height: 300,
+                          child: Center(
+                            child: StreamBuilder<Duration>(
                               stream: player.durationStream,
                               builder: (context, duration) {
                                 return StreamBuilder<Duration>(
@@ -153,78 +154,80 @@ class _PlayerState extends State<Player> {
                                         sliderStrokeWidth: 3.0,
                                       );
                                     });
-                              }),
+                              },
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    Positioned(
-                      bottom: 10,
-                      left: 10,
-                      right: 10,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text("00:50"),
-                          Text("04:50"),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-                ListTile(
-                  leading: Icon(Icons.thumb_up_outlined),
-                  title: Center(child: Text("Monsters Go Bump")),
-                  subtitle: Center(child: Text("ERIKA RECINOS")),
-                  trailing: Icon(Icons.thumb_down_outlined),
-                ),
-                SizedBox(height: 50),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Container(
-                      child: IconButton(
-                        icon: Icon(Icons.loop),
-                        iconSize: 30,
-                        color: color['darkVibrantColor'],
-                        onPressed: () {},
-                      ),
-                      decoration: BoxDecoration(
-                        gradient: gradient,
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(100),
+                      Positioned(
+                        bottom: 10,
+                        left: 10,
+                        right: 10,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("00:50"),
+                            Text("04:50"),
+                          ],
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      width: 200,
-                    ),
-                    Container(
-                      child: IconButton(
-                        icon: GlowIcon(
-                          Icons.shuffle,
-                          glowColor: Colors.blue,
-                          blurRadius: 20,
+                    ],
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.thumb_up_outlined),
+                    title: Center(child: Text("Monsters Go Bump")),
+                    subtitle: Center(child: Text("ERIKA RECINOS")),
+                    trailing: Icon(Icons.thumb_down_outlined),
+                  ),
+                  SizedBox(height: 50),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Container(
+                        child: IconButton(
+                          icon: Icon(Icons.loop),
+                          iconSize: 30,
+                          color: color['darkColor'],
+                          onPressed: () {},
                         ),
-                        iconSize: 30,
-                        color: Colors.white,
-                        onPressed: () {},
-                      ),
-                      decoration: BoxDecoration(
-                        gradient: gradient,
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(100),
+                        decoration: BoxDecoration(
+                          gradient: gradient,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(100),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                Container(
-                  margin: EdgeInsets.only(top: 20),
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: playControl(MainAxisAlignment.center, color),
-                ),
-              ],
-            )),
+                      SizedBox(
+                        width: 200,
+                      ),
+                      Container(
+                        child: IconButton(
+                          icon: GlowIcon(
+                            Icons.shuffle,
+                            glowColor: Colors.blue,
+                            blurRadius: 20,
+                          ),
+                          iconSize: 30,
+                          color: Colors.white,
+                          onPressed: () {},
+                        ),
+                        decoration: BoxDecoration(
+                          gradient: gradient,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(100),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(top: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    child: playControl(MainAxisAlignment.center, color),
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),

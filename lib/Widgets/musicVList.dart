@@ -13,6 +13,7 @@ Widget musicVList(BuildContext context, var data) {
     ),
     height: MediaQuery.of(context).size.height * 0.8,
     child: GridView.count(
+      physics: BouncingScrollPhysics(),
       crossAxisCount: 2,
       mainAxisSpacing: 10,
       crossAxisSpacing: 10,
