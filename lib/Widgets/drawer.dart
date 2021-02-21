@@ -14,12 +14,12 @@ Widget drawer(BuildContext context, User user) {
         children: [
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(color: Colors.black.withOpacity(.2)),
-            accountName:
-                Text(user.displayName == null ? "User" : user.displayName,
-                    // "User" : user.displayName,
-                    style: TextStyle(fontSize: 20.0)),
-            accountEmail: Text(user.email == null ? "User" : user.email,
-                style: TextStyle(fontSize: 20.0)),
+            // accountName:
+            //     Text(user.displayName == null ? "User" : user.displayName,
+            //         // "User" : user.displayName,
+            //         style: TextStyle(fontSize: 20.0)),
+            // accountEmail: Text(user.email == null ? "User" : user.email,
+            //     style: TextStyle(fontSize: 20.0)),
             currentAccountPicture: CircleAvatar(
               backgroundColor: Colors.greenAccent,
               child: Text(

@@ -56,7 +56,17 @@ Future<List> topSongs() async {
       await http.get(topSongsUrl, headers: {"Accept": "application/json"});
   var songsList = json.decode(songsListJSON.body);
   topSongsList = songsList["list"];
+  print(topSongsList[0]);
+  List<SongModel> songs = [];
   for (int i = 0; i < topSongsList.length; i++) {
+    songs.add(SongModel(
+      id: cleanString(topSongsList[i]['id']),
+      title: cleanString(topSongsList[i]['title']),
+      imageURL: cleanString(topSongsList[i]['image']),
+      artist: cleanString(topSongsList[i]["more_info"]["artistMap"]
+          ["primary_artists"][0]['name']),
+      songURL: cleanString(topSongsList[i]['perma_url']),
+    ));
     topSongsList[i]['title'] = cleanString(topSongsList[i]['title'].toString());
     topSongsList[i]["more_info"]["artistMap"]["primary_artists"][0]["name"] =
         cleanString(topSongsList[i]["more_info"]["artistMap"]["primary_artists"]
@@ -65,6 +75,7 @@ Future<List> topSongs() async {
     topSongsList[i]['image'] =
         topSongsList[i]['image'].toString().replaceAll("150x150", "500x500");
   }
+  print(songs);
   return topSongsList;
 }
 

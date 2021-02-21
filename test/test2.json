@@ -1,0 +1,2320 @@
+{
+    "id": "49",
+    "title": "Weekly Top Songs",
+    "subtitle": "Just Updated",
+    "header_desc": "30 songs with music from artists like Jubin Nautiyal, Rochak Kohli, Parampara Tandon, and more.",
+    "type": "playlist",
+    "perma_url": "https:aawww.jiosaavn.comafeaturedaweekly-top-songsa8MT-LQlP35c_",
+    "image": "https:aac.saavncdn.comaeditorialawt15-49_20210219122459.jpg?bch=1613768105",
+    "language": "",
+    "year": "",
+    "play_count": "",
+    "explicit_content": "0",
+    "list_count": "30",
+    "list_type": "",
+    "list": [
+        {
+            "id": "qPB2SEmk",
+            "title": "Bewafa Tera Masoom Chehra",
+            "subtitle": "Jubin Nautiyal, Rochak Kohli - Bewafa Tera Masoom Chehra",
+            "header_desc": "Track from Jubin Nautiyal and Rochak Kohli from album Bewafa Tera Masoom Chehra.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongabewafa-tera-masoom-chehraaATgpAyd1Wlg",
+            "image": "https:aac.saavncdn.coma383aBewafa-Tera-Masoom-Chehra-Hindi-2020-20201116051001-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "63842106",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "23536309",
+                "album": "Bewafa Tera Masoom Chehra",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4+rpYbsddiv0o2YDNLxGhmwBGzmPjfM0QLgz5rlr6J8FsFwhgv5mZ6oPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumabewafa-tera-masoom-chehraa,zpCw1aw0nk_",
+                "duration": "242",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "bhool jaane ke qaabil nahin hai",
+                "starred": "false",
+                "copyright_text": "au2117 2020 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyalauGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "489732",
+                            "name": "Rochak Kohli",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaRochak_Kohli_20200108100702_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarochak-kohliaeegLtbffmDE_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyalauGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "489732",
+                            "name": "Rochak Kohli",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaRochak_Kohli_20200108100702_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarochak-kohliaeegLtbffmDE_"
+                        },
+                        {
+                            "id": "841827",
+                            "name": "Rashmi Virag",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.comaartistsaRashmi_Virag_20200724183026_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarashmi-viraga,3kBI1YH4D4_"
+                        }
+                    ]
+                },
+                "release_date": "2020-11-16",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091198892",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091155378.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "3eMvTzCO",
+            "title": "Chhor Denge",
+            "subtitle": "Parampara Tandon, Sachet-Parampara - Chhor Denge",
+            "header_desc": "Track from Parampara Tandon and Sachet-Parampara from album Chhor Denge.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongachhor-dengeaQw0mRyBKdHw",
+            "image": "https:aac.saavncdn.coma467aChhor-Denge-Hindi-2021-20210204171001-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "5004928",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "25113518",
+                "album": "Chhor Denge",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4uV6y0lvPItXYqIyz6lODkBuQYVdR2XaRnWnYlGdxichlBy2h6AtpQIPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumachhor-dengeaWOIeNhEgN2I_",
+                "duration": "257",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "o, man bhar gaya hai jo hum se, saare rishte tod denge",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "9732209",
+                            "name": "Parampara Tandon",
+                            "role": "primary_artists",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaparampara-tandon-agbSqDAGJI8Q_"
+                        },
+                        {
+                            "id": "3623112",
+                            "name": "Sachet-Parampara",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaSachet-Parampara_20190221095720_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasachet-parampara-a-01nNmS1dCs_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "9732209",
+                            "name": "Parampara Tandon",
+                            "role": "singer",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaparampara-tandon-agbSqDAGJI8Q_"
+                        },
+                        {
+                            "id": "3623112",
+                            "name": "Sachet-Parampara",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaSachet-Parampara_20190221095720_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasachet-parampara-a-01nNmS1dCs_"
+                        },
+                        {
+                            "id": "9732210",
+                            "name": "Yogesh Dubey",
+                            "role": "lyricist",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayogesh-dubey-abqCnxOOLEcw_"
+                        }
+                    ]
+                },
+                "release_date": "2021-02-04",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "sDQ3sEEG",
+            "title": "Mehendi Wale Haath (Feat. Sanjana Sanghi)",
+            "subtitle": "Sachet-Parampara, Guru Randhawa ft. Sanjana Sanghi - Mehendi Wale Haath (Feat. Sanjana Sanghi)",
+            "header_desc": "Track from Sachet-Parampara and Guru Randhawa ft. Sanjana Sanghi from album Mehendi Wale Haath (Feat. Sanjana Sanghi).",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongamehendi-wale-haath-feat.-sanjana-sanghiaAyw6Agd1cnQ",
+            "image": "https:aac.saavncdn.coma923aMehendi-Wale-Haath-feat-Sanjana-Sanghi--Hindi-2021-20210114051001-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "11726024",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Sachet-Parampara, Guru Randhawa",
+                "album_id": "24626448",
+                "album": "Mehendi Wale Haath (Feat. Sanjana Sanghi)",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4gIWhcTOEqAYUepctmXtcdoMrzTH1gSXSehzn9w7UlfoPfGU+DZHSKYPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumamehendi-wale-haath-feat.-sanjana-sanghiaT5ybJ7MPwlY_",
+                "duration": "210",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "yaad bahut aathe hain mujh ko too aur apana gaanv",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "3623112",
+                            "name": "Sachet-Parampara",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaSachet-Parampara_20190221095720_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasachet-parampara-a-01nNmS1dCs_"
+                        },
+                        {
+                            "id": "712878",
+                            "name": "Guru Randhawa",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaGuru_Randhawa_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaguru-randhawa-azMPBu01k9ZI_"
+                        }
+                    ],
+                    "featured_artists": [
+                        {
+                            "id": "9521376",
+                            "name": "Sanjana Sanghi",
+                            "role": "featured_artists",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasanjana-sanghi-aWL9aPJwBZ2Y_"
+                        }
+                    ],
+                    "artists": [
+                        {
+                            "id": "3623112",
+                            "name": "Sachet-Parampara",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.comaartistsaSachet-Parampara_20190221095720_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasachet-parampara-a-01nNmS1dCs_"
+                        },
+                        {
+                            "id": "712878",
+                            "name": "Guru Randhawa",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.comaartistsaGuru_Randhawa_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaguru-randhawa-azMPBu01k9ZI_"
+                        },
+                        {
+                            "id": "3623112",
+                            "name": "Sachet-Parampara",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaSachet-Parampara_20190221095720_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasachet-parampara-a-01nNmS1dCs_"
+                        },
+                        {
+                            "id": "712878",
+                            "name": "Guru Randhawa",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaGuru_Randhawa_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaguru-randhawa-azMPBu01k9ZI_"
+                        },
+                        {
+                            "id": "669007",
+                            "name": "Sayeed Quadri",
+                            "role": "lyricist",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasayeed-quadri-aCkMFUTAeb,c_"
+                        },
+                        {
+                            "id": "9521376",
+                            "name": "Sanjana Sanghi",
+                            "role": "starring",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasanjana-sanghi-aWL9aPJwBZ2Y_"
+                        }
+                    ]
+                },
+                "release_date": "2021-01-14",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091227428",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091184355.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "7WEYd8E8",
+            "title": "Saiyaan Ji (Ft. Nushrratt Bharuccha)",
+            "subtitle": "Yo Yo Honey Singh, Neha Kakkar - Saiyaan Ji (Ft. Nushrratt Bharuccha)",
+            "header_desc": "Track from Yo Yo Honey Singh and Neha Kakkar from album Saiyaan Ji (Ft. Nushrratt Bharuccha).",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongasaiyaan-ji-ft.-nushrratt-bharucchaaRz8uaBAIcgs",
+            "image": "https:aac.saavncdn.coma108aSaiyaan-Ji-Ft-Nushrratt-Bharuccha--Hindi-2021-20210127071005-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "6583997",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Yo Yo Honey Singh",
+                "album_id": "24926425",
+                "album": "Saiyaan Ji (Ft. Nushrratt Bharuccha)",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4rACOH4+WxiIT7RX2GDaolag9MEAnzduKBxSU2+U88KqgAnyXovyUo4PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumasaiyaan-ji-ft.-nushrratt-bharucchaa0z31oRw2g8Y_",
+                "duration": "205",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "matakaaun main kamariyaa dheere-dheere, dheere-dheere",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "464932",
+                            "name": "Neha Kakkar",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaNeha_Kakkar_006_20200822042626_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaneha-kakkar-aEkEBV7JAU-I_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "464932",
+                            "name": "Neha Kakkar",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaNeha_Kakkar_006_20200822042626_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaneha-kakkar-aEkEBV7JAU-I_"
+                        },
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "714916",
+                            "name": "Lil Golu",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.coma397aJutti-Punjabi-2019-20191015103814-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistalil-golu-aok,GnCKjf6I_"
+                        },
+                        {
+                            "id": "5279263",
+                            "name": "Hommie Dilliwala",
+                            "role": "lyricist",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistahommie-dilliwala-aS4t6ip4j0rA_"
+                        }
+                    ]
+                },
+                "release_date": "2021-01-27",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "HKRyCYDv",
+            "title": "Main Jis Din Bhulaa Du",
+            "subtitle": "Jubin Nautiyal, Tulsi Kumar, Rochak Kohli, M. Ashraf - Main Jis Din Bhulaa Du",
+            "header_desc": "Track from Jubin Nautiyal, Tulsi Kumar, and Rochak Kohli from album Main Jis Din Bhulaa Du.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongamain-jis-din-bhulaa-duaOCM5SDdpc0U",
+            "image": "https:aac.saavncdn.coma947aMain-Jis-Din-Bhulaa-Du-Hindi-2021-20210210191001-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "2837146",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "25240135",
+                "album": "Main Jis Din Bhulaa Du",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J45N23wzxiRa0+arQidRwazjZJ43u7yq2i5jVc10f3yKUASFmpeV1hBoPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumamain-jis-din-bhulaa-duaCNEZQaYeFa0_",
+                "duration": "300",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "false",
+                "lyrics_snippet": "",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyalauGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "455137",
+                            "name": "Tulsi Kumar",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaTulsi_Kumar_003_20201126102829_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatulsi-kumara31Xl5D0eU5Y_"
+                        },
+                        {
+                            "id": "489732",
+                            "name": "Rochak Kohli",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaRochak_Kohli_20200108100702_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarochak-kohliaeegLtbffmDE_"
+                        },
+                        {
+                            "id": "510099",
+                            "name": "M. Ashraf",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.coma088aAnmol-Mohabbat-Mahal-Mere-Sapnon-Ka-Urdu-2014-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistam.-ashrafad9NpLxUoY,4_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyalauGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "455137",
+                            "name": "Tulsi Kumar",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaTulsi_Kumar_003_20201126102829_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatulsi-kumara31Xl5D0eU5Y_"
+                        },
+                        {
+                            "id": "489732",
+                            "name": "Rochak Kohli",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaRochak_Kohli_20200108100702_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarochak-kohliaeegLtbffmDE_"
+                        },
+                        {
+                            "id": "510099",
+                            "name": "M. Ashraf",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.coma088aAnmol-Mohabbat-Mahal-Mere-Sapnon-Ka-Urdu-2014-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistam.-ashrafad9NpLxUoY,4_"
+                        },
+                        {
+                            "id": "473441",
+                            "name": "Manoj Muntashir",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.coma259aEpisode-1-Dekhte-Dekhte-From-Muntashir-Ki-Diary-Se--Hindi-2019-20190902135108-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamanoj-muntashiraeaiDjU0BhyA_"
+                        },
+                        {
+                            "id": "459605",
+                            "name": "Masroor Anwar",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.coma332aAap-Ke-Naam-Urdu-2013-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamasroor-anwaral0YGt8NR39I_"
+                        }
+                    ]
+                },
+                "release_date": "2021-02-10",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "triller_available": false
+            }
+        },
+        {
+            "id": "v6NrwMud",
+            "title": "Faraar",
+            "subtitle": "Akull - Faraar",
+            "header_desc": "Track from Akull from album Faraar.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongafaraaraBl4lQwN9Qlc",
+            "image": "https:aac.saavncdn.coma660aFaraar-Hindi-2021-20210113053337-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "6236893",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "24611025",
+                "album": "Faraar",
+                "label": "Universal Music India Pvt Ltd.",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4eOPKguzzDBq+60cbQj1pAPleQGJh1f2Fe2y3feqrgVoypMtnbbHbf4PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumafaraaradA8xc2kSniM_",
+                "duration": "192",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "false",
+                "lyrics_snippet": "",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Universal Music India Pvt. Ltd.",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "4729608",
+                            "name": "Akull",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaAkull_20191203102446_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaakull-aTauvoCCe9p0_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "4729608",
+                            "name": "Akull",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaAkull_20191203102446_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaakull-aTauvoCCe9p0_"
+                        },
+                        {
+                            "id": "716940",
+                            "name": "Mellow D",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaMellow_D_20200428094402_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamellow-d-aS0r4x4GuWc0_"
+                        }
+                    ]
+                },
+                "release_date": "2021-01-15",
+                "label_url": "alabelauniversal-music-india-pvt-ltd.-albumsayCRRDUDuazo_",
+                "vcode": "010912291221285",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010912291177856.mp3",
+                "triller_available": false
+            }
+        },
+        {
+            "id": "yc5XXdke",
+            "title": "Thoda Thoda Pyaar",
+            "subtitle": "Stebin Ben - Thoda Thoda Pyaar",
+            "header_desc": "Track from Stebin Ben from album Thoda Thoda Pyaar.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongathoda-thoda-pyaaraCQteaSxUXFY",
+            "image": "https:aac.saavncdn.coma959aThoda-Thoda-Pyaar-Hindi-2021-20210212084501-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "1406627",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Nilesh Ahuja",
+                "album_id": "25291894",
+                "album": "Thoda Thoda Pyaar",
+                "label": "Zee Music Co.",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4g7RK9Dbmp6U0JUEeq+NL+0+Cjuh7wehT3bUpqYCEiCqm04XkKll+54PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumathoda-thoda-pyaara7F6S84kDvPo_",
+                "duration": "244",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "ki thoda-thoda pyaar hua tum se",
+                "starred": "false",
+                "copyright_text": "au00a9 2021 Zee Music Company",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "4670197",
+                            "name": "Stebin Ben",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaStebin_Ben_004_20200930091339_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistastebin-ben-acIgvj9lx6Dc_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "2029028",
+                            "name": "Nilesh Ahuja",
+                            "role": "music",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistanilesh-ahuja-aGrTspM8TKSs_"
+                        },
+                        {
+                            "id": "4670197",
+                            "name": "Stebin Ben",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaStebin_Ben_004_20200930091339_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistastebin-ben-acIgvj9lx6Dc_"
+                        },
+                        {
+                            "id": "455665",
+                            "name": "Kumaar",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.coma771aHebronu-Geethalu-Vol-2-1996-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistakumaar-ajXhf,IMIGGs_"
+                        },
+                        {
+                            "id": "682930",
+                            "name": "Sidharth Malhotra",
+                            "role": "starring",
+                            "image": "https:aac.saavncdn.comaartistsaSidharth_Malhotra_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasidharth-malhotra-ana,EAoXKSjk_"
+                        },
+                        {
+                            "id": "467129",
+                            "name": "Neha Sharma",
+                            "role": "starring",
+                            "image": "https:aac.saavncdn.coma573aAaja-Tujhe-Pyar-Karu-Hindi-2107-20171026094123-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaneha-sharma-aGTTcXpQ5vNE_"
+                        }
+                    ]
+                },
+                "release_date": "2021-02-12",
+                "label_url": "alabelazee-music-co.-albumsa06cepoPTlhU_",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "obYVLtJu",
+            "title": "Pehle Pyaar Ka Pehla Gham (Feat. Khushali Kumar)",
+            "subtitle": "Tulsi Kumar, Jubin Nautiyal, Rajesh Roshan, Manan Bhardwaj - Pehle Pyaar Ka Pehla Gham (Feat. Khushali Kumar)",
+            "header_desc": "Track from Tulsi Kumar, Jubin Nautiyal, and Rajesh Roshan from album Pehle Pyaar Ka Pehla Gham (Feat. Khushali Kumar).",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongapehle-pyaar-ka-pehla-gham-feat.-khushali-kumaraHwoyZzhEfUY",
+            "image": "https:aac.saavncdn.coma961aPehle-Pyaar-Ka-Pehla-Gham-Feat-Khushali-Kumar--Hindi-2021-20210121051001-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "4910605",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "24807926",
+                "album": "Pehle Pyaar Ka Pehla Gham (Feat. Khushali Kumar)",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4I2L5AZlUKg9jBkE28wxnWihjweJf1sAhgntaRwKmaw0SaCaaKM0mRYPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumapehle-pyaar-ka-pehla-gham-feat.-khushali-kumaraIIba9cXDvs8_",
+                "duration": "247",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "pehle pyaar ka pehlaa gam",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "455137",
+                            "name": "Tulsi Kumar",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaTulsi_Kumar_003_20201126102829_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatulsi-kumar-a31Xl5D0eU5Y_"
+                        },
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyal-auGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "455518",
+                            "name": "Rajesh Roshan",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaRajesh_Roshan_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarajesh-roshan-a0c99,qeT65U_"
+                        },
+                        {
+                            "id": "746774",
+                            "name": "Manan Bhardwaj",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.coma707aBewafa-Tera-Yun-Muskurana-Hindi-2019-20191209075830-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamanan-bhardwaj-aPHyqUR9DoKY_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "455137",
+                            "name": "Tulsi Kumar",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaTulsi_Kumar_003_20201126102829_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatulsi-kumar-a31Xl5D0eU5Y_"
+                        },
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyal-auGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "455518",
+                            "name": "Rajesh Roshan",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaRajesh_Roshan_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarajesh-roshan-a0c99,qeT65U_"
+                        },
+                        {
+                            "id": "746774",
+                            "name": "Manan Bhardwaj",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.coma707aBewafa-Tera-Yun-Muskurana-Hindi-2019-20191209075830-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamanan-bhardwaj-aPHyqUR9DoKY_"
+                        },
+                        {
+                            "id": "455447",
+                            "name": "Javed Akhtar",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaJaved_Akhtar_002_20180130093823_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaved-akhtar-aOSqyhF26jE8_"
+                        },
+                        {
+                            "id": "841827",
+                            "name": "Rashmi Virag",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaRashmi_Virag_20200724183026_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarashmi-virag-a,3kBI1YH4D4_"
+                        }
+                    ]
+                },
+                "release_date": "2021-01-21",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "BI4CK5i_",
+            "title": "Taaron Ke Shehar",
+            "subtitle": "Neha Kakkar, Jubin Nautiyal, Jaani - Taaron Ke Shehar",
+            "header_desc": "Track from Neha Kakkar, Jubin Nautiyal, and Jaani from album Taaron Ke Shehar.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongataaron-ke-sheharaMiFfcj8FXmw",
+            "image": "https:aac.saavncdn.coma439aTaaron-Ke-Shehar-Hindi-2020-20200920035507-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "104818079",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "22594259",
+                "album": "Taaron Ke Shehar",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4zA8G+8GncUmpWKKLJdsp2K3w5aXJAYYkNtKxEPYhbwiierZiWbZ6P4PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumataaron-ke-sheharaVfp51onqKJY_",
+                "duration": "230",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "aa chal le chalem tumhein thaaron ke shahar mein",
+                "starred": "false",
+                "copyright_text": "au2117 2020 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "464932",
+                            "name": "Neha Kakkar",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaNeha_Kakkar_006_20200822042626_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaneha-kakkar-aEkEBV7JAU-I_"
+                        },
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyal-auGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "680475",
+                            "name": "Jaani",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaJaani_001_20191128083617_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaani-aa0Vk-AlzJu8_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "464932",
+                            "name": "Neha Kakkar",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaNeha_Kakkar_006_20200822042626_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaneha-kakkar-aEkEBV7JAU-I_"
+                        },
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyal-auGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "680475",
+                            "name": "Jaani",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaJaani_001_20191128083617_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaani-aa0Vk-AlzJu8_"
+                        },
+                        {
+                            "id": "680475",
+                            "name": "Jaani",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaJaani_001_20191128083617_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaani-aa0Vk-AlzJu8_"
+                        }
+                    ]
+                },
+                "release_date": "2020-09-20",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091179747",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091136282.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "j6FkR0-8",
+            "title": "Top Tucker",
+            "subtitle": "Badshah, Uchana Amit, Yuvan Shankar Raja ft. Jonita Gandhi - Top Tucker",
+            "header_desc": "Track from Badshah, Uchana Amit, and Yuvan Shankar Raja ft. Jonita Gandhi from album Top Tucker.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongatop-tuckeraGl4tWiYAGgs",
+            "image": "https:aac.saavncdn.coma970aTop-Tucker-Hindi-2021-20210208161410-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "1179929",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Badshah, Yuvan Shankar Raja",
+                "album_id": "25289154",
+                "album": "Top Tucker",
+                "label": "Saga Music",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4Txoa5+vLLFIDDV0u2ppTG3294Dp8E0rOX4dLxikAhc04DPjIaDcCA4PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumatop-tuckera2nXN2QARvCo_",
+                "duration": "205",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "Hey, top, top, top tucker",
+                "starred": "false",
+                "copyright_text": "au00a9 2021 SAGA Music",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "456863",
+                            "name": "Badshah",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaBadshah_004_20191118143638_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistabadshahad4OwAaEcnD0_"
+                        },
+                        {
+                            "id": "7368772",
+                            "name": "Uchana Amit",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaUchana_Amit_20200117072247_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistauchana-amita59FZOADsR5Y_"
+                        },
+                        {
+                            "id": "456091",
+                            "name": "Yuvan Shankar Raja",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaYuvan_Shankar_Raja_002_20180802174245_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayuvan-shankar-rajaa33rudDAZmSk_"
+                        }
+                    ],
+                    "featured_artists": [
+                        {
+                            "id": "672010",
+                            "name": "Jonita Gandhi",
+                            "role": "featured_artists",
+                            "image": "http:aac.saavncdn.comaartistsaJonita_Gandhi_003_20180507091741_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajonita-gandhia2deuXsoZiWA_"
+                        }
+                    ],
+                    "artists": [
+                        {
+                            "id": "456863",
+                            "name": "Badshah",
+                            "role": "music",
+                            "image": "http:aac.saavncdn.comaartistsaBadshah_004_20191118143638_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistabadshahad4OwAaEcnD0_"
+                        },
+                        {
+                            "id": "456091",
+                            "name": "Yuvan Shankar Raja",
+                            "role": "music",
+                            "image": "http:aac.saavncdn.comaartistsaYuvan_Shankar_Raja_002_20180802174245_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayuvan-shankar-rajaa33rudDAZmSk_"
+                        },
+                        {
+                            "id": "456863",
+                            "name": "Badshah",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaBadshah_004_20191118143638_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistabadshahad4OwAaEcnD0_"
+                        },
+                        {
+                            "id": "7368772",
+                            "name": "Uchana Amit",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaUchana_Amit_20200117072247_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistauchana-amita59FZOADsR5Y_"
+                        },
+                        {
+                            "id": "456091",
+                            "name": "Yuvan Shankar Raja",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaYuvan_Shankar_Raja_002_20180802174245_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayuvan-shankar-rajaa33rudDAZmSk_"
+                        },
+                        {
+                            "id": "672010",
+                            "name": "Jonita Gandhi",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaJonita_Gandhi_003_20180507091741_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajonita-gandhia2deuXsoZiWA_"
+                        },
+                        {
+                            "id": "456863",
+                            "name": "Badshah",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.comaartistsaBadshah_004_20191118143638_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistabadshahad4OwAaEcnD0_"
+                        },
+                        {
+                            "id": "1920988",
+                            "name": "Vignesh ShivN",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.coma068aThaanaa-Serndha-Koottam-Tamil-2018-20180103181741-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistavignesh-shivnaVdo3VejUMXk_"
+                        },
+                        {
+                            "id": "2530170",
+                            "name": "Rashmika Mandanna",
+                            "role": "starring",
+                            "image": "http:aac.saavncdn.comaartistsaRashmika_Mandanna_20190509092520_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistarashmika-mandannaaaa5n2IRMCwc_"
+                        }
+                    ]
+                },
+                "release_date": "2021-02-12",
+                "label_url": "alabelasaga-music-albumsamI3ZXzlHZXo_",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "p6AjRavi",
+            "title": "Sona Lagda",
+            "subtitle": "Sukriti Kakar, Prakriti Kakar, Sukh-E Muzical Doctorz - Sona Lagda",
+            "header_desc": "Track from Sukriti Kakar, Prakriti Kakar, and Sukh-E Muzical Doctorz from album Sona Lagda.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongasona-lagdaaAF4qWyZRQVo",
+            "image": "https:aac.saavncdn.coma714aSona-Lagda-Hindi-2021-20210209053445-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "1214797",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "25215005",
+                "album": "Sona Lagda",
+                "label": "Universal Music India Pvt Ltd.",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4p1bpxKwGqfUAVJkee1MSUy359kFX23V7ORvyB7pPoUXYTaQX1PV50YPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumasona-lagdaaMVBj5k9MBCM_",
+                "duration": "195",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "false",
+                "lyrics_snippet": "",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Universal Music India Pvt. Ltd.",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "670650",
+                            "name": "Sukriti Kakar",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaSukriti_Kakar_002_20200314080054_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasukriti-kakar-afB0XSQjRbtM_"
+                        },
+                        {
+                            "id": "488931",
+                            "name": "Prakriti Kakar",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaPrakriti_Kakar_002_20200220115540_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaprakriti-kakar-aufG1BlA5TVM_"
+                        },
+                        {
+                            "id": "911626",
+                            "name": "Sukh-E Muzical Doctorz",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaSukh-E_Muzical_Doctorz_20180308055839_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasukh-e-muzical-doctorz-anwuVSuMGHi8_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "670650",
+                            "name": "Sukriti Kakar",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaSukriti_Kakar_002_20200314080054_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasukriti-kakar-afB0XSQjRbtM_"
+                        },
+                        {
+                            "id": "488931",
+                            "name": "Prakriti Kakar",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaPrakriti_Kakar_002_20200220115540_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaprakriti-kakar-aufG1BlA5TVM_"
+                        },
+                        {
+                            "id": "911626",
+                            "name": "Sukh-E Muzical Doctorz",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaSukh-E_Muzical_Doctorz_20180308055839_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasukh-e-muzical-doctorz-anwuVSuMGHi8_"
+                        },
+                        {
+                            "id": "911626",
+                            "name": "Sukh-E Muzical Doctorz",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaSukh-E_Muzical_Doctorz_20180308055839_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasukh-e-muzical-doctorz-anwuVSuMGHi8_"
+                        },
+                        {
+                            "id": "760636",
+                            "name": "Bharatt",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.coma368aMila-Jo-Tu-Hindi-2018-20200109124506-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistabharatt-aIWqIsc,ENFA_"
+                        },
+                        {
+                            "id": "672460",
+                            "name": "Saurabh Bhalerao",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.coma438aBela-Shende-2014-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasaurabh-bhalerao-ay3,PeHL8qUk_"
+                        }
+                    ]
+                },
+                "release_date": "2021-02-11",
+                "label_url": "alabelauniversal-music-india-pvt-ltd.-albumsayCRRDUDuazo_",
+                "triller_available": false
+            }
+        },
+        {
+            "id": "rFiZISxI",
+            "title": "Nayan",
+            "subtitle": "Dhvani Bhanushali, Jubin Nautiyal, Lijo George-Dj Chetas - Nayan",
+            "header_desc": "Track from Dhvani Bhanushali, Jubin Nautiyal, and Lijo George-Dj Chetas from album Nayan.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasonganayanaAi4Caz1jT3o",
+            "image": "https:aac.saavncdn.coma769aNayan-Hindi-2020-20201208051000-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "20845261",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "23970746",
+                "album": "Nayan",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4fVXmlDy9gxmbsIOPXPBOkLAXju2bPpeblnwzqKN2AxyAa98aRosD0IPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumanayanarqWBwia4YxM_",
+                "duration": "254",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "au0aa8au0aafau0aa8 au0aa8au0ac7 au0aacau0a82au0aa7 au0ab0au0abeau0a96au0ac0au0aa8au0ac7 au0aaeau0ac7au0a82 au0a9cau0acdau0aafau0abeau0ab0au0ac7",
+                "starred": "false",
+                "copyright_text": "au2117 2020 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "3623109",
+                            "name": "Dhvani Bhanushali",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaDhvani_Bhanushali_20190926072711_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadhvani-bhanushalia,HZMDaWbOBY_"
+                        },
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyalauGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "3953689",
+                            "name": "Lijo George-Dj Chetas",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.coma792aNon-Stop-Bollywood-Dandiya-Hindi-2019-20190927231545-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistalijo-george-dj-chetasaOUMjvsOYLbw_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "3623109",
+                            "name": "Dhvani Bhanushali",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaDhvani_Bhanushali_20190926072711_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadhvani-bhanushalia,HZMDaWbOBY_"
+                        },
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyalauGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "3953689",
+                            "name": "Lijo George-Dj Chetas",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.coma792aNon-Stop-Bollywood-Dandiya-Hindi-2019-20190927231545-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistalijo-george-dj-chetasaOUMjvsOYLbw_"
+                        },
+                        {
+                            "id": "473441",
+                            "name": "Manoj Muntashir",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.coma259aEpisode-1-Dekhte-Dekhte-From-Muntashir-Ki-Diary-Se--Hindi-2019-20190902135108-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamanoj-muntashiraeaiDjU0BhyA_"
+                        }
+                    ]
+                },
+                "release_date": "2020-12-08",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091211664",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091168197.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "F03-27Lj",
+            "title": "Husnn Hai Suhaana (New)",
+            "subtitle": "Chandana Dixit, Abhijeet - Coolie No. 1 (OST)",
+            "header_desc": "Track from Chandana Dixit and Abhijeet from album Coolie No. 1 (OST).",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongahusnn-hai-suhaana-newaNlhYHEYHe1k",
+            "image": "https:aac.saavncdn.coma895aCoolie-No-1-OST--Hindi-2020-20210115185755-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "12750302",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Tanishk Bagchi, Anand-Milind",
+                "album_id": "23905084",
+                "album": "Coolie No. 1 (OST)",
+                "label": "Tips Music",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4iIduU01BX9a9f2itxrFB+CUF6IvyohraoOTwidDiK2h1948bVZzkf4PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumacoolie-no.-1-osta,In269KUNCI_",
+                "duration": "267",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "goriya churaa naa mera jiyaa",
+                "starred": "false",
+                "copyright_text": "au00a9 2020 Tips Music",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "457572",
+                            "name": "Chandana Dixit",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.coma418aChalo-Vaishnodevi-1998-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistachandana-dixitaPrh3zQct5Jk_"
+                        },
+                        {
+                            "id": "458805",
+                            "name": "Abhijeet",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaAbhijeet_Bhattacharya_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaabhijeetaW75ouX6ktas_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "1595701",
+                            "name": "Tanishk Bagchi",
+                            "role": "music",
+                            "image": "http:aac.saavncdn.comaartistsaTanishk_Bagchi_002_20190607071953_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatanishk-bagchiaY-5m-phldpg_"
+                        },
+                        {
+                            "id": "457059",
+                            "name": "Anand-Milind",
+                            "role": "music",
+                            "image": "http:aac.saavncdn.comaartistsaAnand-Milind_20180115075739_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaanand-milindaqWahSMtLeSI_"
+                        },
+                        {
+                            "id": "457572",
+                            "name": "Chandana Dixit",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.coma418aChalo-Vaishnodevi-1998-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistachandana-dixitaPrh3zQct5Jk_"
+                        },
+                        {
+                            "id": "458805",
+                            "name": "Abhijeet",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaAbhijeet_Bhattacharya_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaabhijeetaW75ouX6ktas_"
+                        },
+                        {
+                            "id": "455415",
+                            "name": "Sameer",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.comaartistsaSameer-20170714064856_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasameerazbXOIZIhW-8_"
+                        },
+                        {
+                            "id": "511656",
+                            "name": "Varun Dhawan",
+                            "role": "starring",
+                            "image": "http:aac.saavncdn.comaartistsaVarun_Dhawan_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistavarun-dhawananPLp3EdUdaA_"
+                        },
+                        {
+                            "id": "5607405",
+                            "name": "Sara Ali Khan",
+                            "role": "starring",
+                            "image": "http:aac.saavncdn.comaartistsaSara_Ali_Khan_20200303113945_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasara-ali-khanaR8Muu,CMC78_"
+                        }
+                    ]
+                },
+                "release_date": "2020-12-09",
+                "label_url": "alabelatips-music-albumsaWyMes45YplY_",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "_nEBGjbA",
+            "title": "Toh Aagaye Hum",
+            "subtitle": "Jubin Nautiyal, Mithoon - Toh Aagaye Hum",
+            "header_desc": "Track from Jubin Nautiyal and Mithoon from album Toh Aagaye Hum.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongatoh-aagaye-humaLwYuczNaVXI",
+            "image": "https:aac.saavncdn.coma596aToh-Aagaye-Hum-Hindi-2021-20210105051001-150x150.jpg",
+            "language": "hindi",
+            "year": "2021",
+            "play_count": "6315670",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "24458261",
+                "album": "Toh Aagaye Hum",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4ysj4woduBtXAS270uIcGXiF4bDaGWx6VUNiDciXdhLU7souFj8Dv3YPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumatoh-aagaye-humaoTv1zEgCPII_",
+                "duration": "302",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "to aa gae hum, to aa gae hum",
+                "starred": "false",
+                "copyright_text": "au2117 2021 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyal-auGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "702592",
+                            "name": "Mithoon",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaMithoon_002_20200908073735_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamithoon-anQKQiNRsTKs_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "881158",
+                            "name": "Jubin Nautiyal",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaJubin_Nautiyal_002_20180507091834_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajubin-nautiyal-auGdfg6zGf4s_"
+                        },
+                        {
+                            "id": "702592",
+                            "name": "Mithoon",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaMithoon_002_20200908073735_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamithoon-anQKQiNRsTKs_"
+                        },
+                        {
+                            "id": "669007",
+                            "name": "Sayeed Quadri",
+                            "role": "lyricist",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasayeed-quadri-aCkMFUTAeb,c_"
+                        }
+                    ]
+                },
+                "release_date": "2021-01-05",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091227409",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091184155.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "NCcmYzsL",
+            "title": "Teri Bhabhi",
+            "subtitle": "Javed-Mohsin, Dev Negi, Neha Kakkar - Coolie No. 1",
+            "header_desc": "Track from Javed-Mohsin, Dev Negi, and Neha Kakkar from album Coolie No. 1.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongateri-bhabhiaPisIXC1KRH8",
+            "image": "https:aac.saavncdn.coma815aCoolie-No-1-Hindi-2020-20201222145604-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "12567993",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Javed-Mohsin",
+                "album_id": "23854049",
+                "album": "Coolie No. 1",
+                "label": "Zee Music Co.",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4Illu6q6Qt33lAQlaeQXPOHy2Xd1A9ZkxyzCNtpha4R5++Z8MhyKSXYPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumacoolie-no.-1aOLYyVIsUDXk_",
+                "duration": "202",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "saba jidhar vo hai udhar, dekh rahe hain",
+                "starred": "false",
+                "copyright_text": "au00a9 2020 Zee Music Company",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "5393135",
+                            "name": "Javed-Mohsin",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaJaved_-_Mohsin_20190913065723_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaved-mohsin-aVyORSofKQ6o_"
+                        },
+                        {
+                            "id": "653204",
+                            "name": "Dev Negi",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaDev_Negi_005_20210120092836_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadev-negi-aNpCqdI4dD5U_"
+                        },
+                        {
+                            "id": "464932",
+                            "name": "Neha Kakkar",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaNeha_Kakkar_006_20200822042626_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaneha-kakkar-aEkEBV7JAU-I_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "5393135",
+                            "name": "Javed-Mohsin",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.comaartistsaJaved_-_Mohsin_20190913065723_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaved-mohsin-aVyORSofKQ6o_"
+                        },
+                        {
+                            "id": "5393135",
+                            "name": "Javed-Mohsin",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaJaved_-_Mohsin_20190913065723_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaved-mohsin-aVyORSofKQ6o_"
+                        },
+                        {
+                            "id": "653204",
+                            "name": "Dev Negi",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaDev_Negi_005_20210120092836_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadev-negi-aNpCqdI4dD5U_"
+                        },
+                        {
+                            "id": "464932",
+                            "name": "Neha Kakkar",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaNeha_Kakkar_006_20200822042626_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaneha-kakkar-aEkEBV7JAU-I_"
+                        },
+                        {
+                            "id": "486204",
+                            "name": "Danish Sabri",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaDanish_Sabri_000_20201220173106_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadanish-sabri-aLWvxTN2trHQ_"
+                        },
+                        {
+                            "id": "511656",
+                            "name": "Varun Dhawan",
+                            "role": "starring",
+                            "image": "https:aac.saavncdn.comaartistsaVarun_Dhawan_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistavarun-dhawan-anPLp3EdUdaA_"
+                        },
+                        {
+                            "id": "5607405",
+                            "name": "Sara Ali Khan",
+                            "role": "starring",
+                            "image": "https:aac.saavncdn.comaartistsaSara_Ali_Khan_20200303113945_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasara-ali-khan-aR8Muu,CMC78_"
+                        },
+                        {
+                            "id": "455780",
+                            "name": "Paresh Rawal",
+                            "role": "starring",
+                            "image": "https:aac.saavncdn.comaartistsaParesh_Rawal_20190927134821_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaparesh-rawal-aO574Qtw-j4g_"
+                        }
+                    ]
+                },
+                "release_date": "2020-12-22",
+                "label_url": "alabelazee-music-co.-albumsa06cepoPTlhU_",
+                "vcode": "010910441205625",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910441162142.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "e59Uvuwf",
+            "title": "First Kiss",
+            "subtitle": "Yo Yo Honey Singh, Ipsitaa - First Kiss",
+            "header_desc": "Track from Yo Yo Honey Singh and Ipsitaa from album First Kiss.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongafirst-kissaFV1SZAJFQFU",
+            "image": "https:aac.saavncdn.coma802aFirst-Kiss-Hindi-2020-20201124051001-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "11498321",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Yo Yo Honey Singh",
+                "album_id": "23672837",
+                "album": "First Kiss",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4O1QdT5OCb3CFV1bfH+fGxkVD+sSQ2QHCmxkGvAJKLOh5R0PMgLohq4PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumafirst-kissapqI-ckqL33k_",
+                "duration": "219",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "(pyaar kee pehlee..., pyaar kee pehlee) first kiss",
+                "starred": "false",
+                "copyright_text": "au2117 2020 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "5492181",
+                            "name": "Ipsitaa",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.coma309aPagalpanti-Title-Track-From-Pagalpanti--Hindi-2019-20191121164311-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaipsitaa-aD7y1FLgq5f8_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "5492181",
+                            "name": "Ipsitaa",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.coma309aPagalpanti-Title-Track-From-Pagalpanti--Hindi-2019-20191121164311-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaipsitaa-aD7y1FLgq5f8_"
+                        },
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singh-a06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "714916",
+                            "name": "Lil Golu",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.coma397aJutti-Punjabi-2019-20191015103814-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistalil-golu-aok,GnCKjf6I_"
+                        },
+                        {
+                            "id": "5279263",
+                            "name": "Hommie Dilliwala",
+                            "role": "lyricist",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistahommie-dilliwala-aS4t6ip4j0rA_"
+                        },
+                        {
+                            "id": "1878956",
+                            "name": "Singhsta",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.coma164aMakhna-Hindi-2018-20181221095007-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistasinghsta-azaGCsSSAGr8_"
+                        }
+                    ]
+                },
+                "release_date": "2020-11-24",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091205940",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091162506.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "3Gvg7YKw",
+            "title": "Naach Meri Rani",
+            "subtitle": "Guru Randhawa, Tanishk Bagchi, Nikhita Gandhi - Naach Meri Rani",
+            "header_desc": "Track from Guru Randhawa, Tanishk Bagchi, and Nikhita Gandhi from album Naach Meri Rani.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasonganaach-meri-raniaQy8dVkNpfEQ",
+            "image": "https:aac.saavncdn.coma248aNaach-Meri-Rani-Hindi-2020-20201020051001-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "40645091",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "",
+                "album_id": "23093857",
+                "album": "Naach Meri Rani",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4MuPX4w2bTK4CPniPLHDgNP2Uq697xaqH1Ita6YHLr7+E66aUzGbS8IPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumanaach-meri-rania9bQQKTfvY60_",
+                "duration": "212",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "naach meri raani-raani, meri raani naach",
+                "starred": "false",
+                "copyright_text": "au2117 2020 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "712878",
+                            "name": "Guru Randhawa",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaGuru_Randhawa_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaguru-randhawaazMPBu01k9ZI_"
+                        },
+                        {
+                            "id": "1595701",
+                            "name": "Tanishk Bagchi",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaTanishk_Bagchi_002_20190607071953_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatanishk-bagchiaY-5m-phldpg_"
+                        },
+                        {
+                            "id": "745460",
+                            "name": "Nikhita Gandhi",
+                            "role": "primary_artists",
+                            "image": "http:aac.saavncdn.comaartistsaNikhita_Gandhi_003_20200820124512_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistanikhita-gandhiaPP1RAOLWPAM_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "712878",
+                            "name": "Guru Randhawa",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaGuru_Randhawa_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaguru-randhawaazMPBu01k9ZI_"
+                        },
+                        {
+                            "id": "1595701",
+                            "name": "Tanishk Bagchi",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaTanishk_Bagchi_002_20190607071953_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatanishk-bagchiaY-5m-phldpg_"
+                        },
+                        {
+                            "id": "745460",
+                            "name": "Nikhita Gandhi",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaNikhita_Gandhi_003_20200820124512_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistanikhita-gandhiaPP1RAOLWPAM_"
+                        },
+                        {
+                            "id": "1595701",
+                            "name": "Tanishk Bagchi",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.comaartistsaTanishk_Bagchi_002_20190607071953_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistatanishk-bagchiaY-5m-phldpg_"
+                        }
+                    ]
+                },
+                "release_date": "2020-10-20",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091190429",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091147031.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "HsyjvYmE",
+            "title": "Besharam Bewaffa (From)",
+            "subtitle": "B Praak - Besharam Bewaffa (From)",
+            "header_desc": "Track from B Praak from album Besharam Bewaffa (From )",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongabesharam-bewaffa-from-jaani-veaOBsSWwJpWnY",
+            "image": "https:aac.saavncdn.coma123aBesharam-Bewaffa-From-Jaani-Ve--Hindi-2020-20201130101001-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "13031813",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "B Praak",
+                "album_id": "23811908",
+                "album": "Besharam Bewaffa (From )",
+                "label": "T-Series",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4eyVS0lZ5U4QfeCWWkZ4nEnan11Qdki6myrRL1AmIpbZac1QG5ccraoPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumabesharam-bewaffa-from-jaani-veaGAQGWMkd6Lc_",
+                "duration": "271",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "oh beshram, oh behya, oh bevafaa",
+                "starred": "false",
+                "copyright_text": "au2117 2020 Super Cassettes Industries Private Limited",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "788130",
+                            "name": "B Praak",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaB_Praak_001_20191118112005_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistab-praak-aCfABr-vmQdw_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "788130",
+                            "name": "B Praak",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.comaartistsaB_Praak_001_20191118112005_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistab-praak-aCfABr-vmQdw_"
+                        },
+                        {
+                            "id": "788130",
+                            "name": "B Praak",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaB_Praak_001_20191118112005_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistab-praak-aCfABr-vmQdw_"
+                        },
+                        {
+                            "id": "680475",
+                            "name": "Jaani",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.comaartistsaJaani_001_20191128083617_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistajaani-aa0Vk-AlzJu8_"
+                        }
+                    ]
+                },
+                "release_date": "2020-11-30",
+                "label_url": "alabelat-series-albumsa6DLuXO3VoTo_",
+                "vcode": "010910091205971",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910091162761.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        },
+        {
+            "id": "rh1SnhYq",
+            "title": "Jingle Bell",
+            "subtitle": "Hommie Dilliwala ft. Yo Yo Honey Singh - Jingle Bell",
+            "header_desc": "Track from Hommie Dilliwala ft. Yo Yo Honey Singh from album Jingle Bell.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongajingle-bellaAgBaYhpYbkI",
+            "image": "https:aac.saavncdn.coma920aJingle-Bell-Hindi-2020-20201226024123-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "3586610",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Yo Yo Honey Singh",
+                "album_id": "24317662",
+                "album": "Jingle Bell",
+                "label": "GK. Digital",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J4d7kAz4PAx6UArlaGu7NBm7v2wTaZ3ePegvsrS1QegvvbsoY9ptdvW4PzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumajingle-bellaTf0SY0Qk8Qc_",
+                "duration": "196",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "false",
+                "lyrics_snippet": "",
+                "starred": "false",
+                "copyright_text": "au00a9 2020 Yo Yo Honey Singh",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "5279263",
+                            "name": "Hommie Dilliwala",
+                            "role": "primary_artists",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistahommie-dilliwalaaS4t6ip4j0rA_"
+                        }
+                    ],
+                    "featured_artists": [
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "featured_artists",
+                            "image": "http:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singha06QxyAvVpB4_"
+                        }
+                    ],
+                    "artists": [
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "music",
+                            "image": "http:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singha06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "5279263",
+                            "name": "Hommie Dilliwala",
+                            "role": "singer",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistahommie-dilliwalaaS4t6ip4j0rA_"
+                        },
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "singer",
+                            "image": "http:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singha06QxyAvVpB4_"
+                        },
+                        {
+                            "id": "5279263",
+                            "name": "Hommie Dilliwala",
+                            "role": "lyricist",
+                            "image": "",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistahommie-dilliwalaaS4t6ip4j0rA_"
+                        },
+                        {
+                            "id": "485956",
+                            "name": "Yo Yo Honey Singh",
+                            "role": "lyricist",
+                            "image": "http:aac.saavncdn.comaartistsaYo_Yo_Honey_Singh_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistayo-yo-honey-singha06QxyAvVpB4_"
+                        }
+                    ]
+                },
+                "release_date": "2020-12-25",
+                "label_url": "alabelagk.-digital-albumsaaguA5abrFcA_",
+                "triller_available": false
+            }
+        },
+        {
+            "id": "ttHSUTe5",
+            "title": "BurjKhalifa",
+            "subtitle": "Madhubanti, Nikhita Gandhi, Shashi, Dj Khushi - Laxmii",
+            "header_desc": "Track from Madhubanti, Nikhita Gandhi, and Shashi from album Laxmii.",
+            "type": "song",
+            "perma_url": "https:aawww.jiosaavn.comasongaburjkhalifaaBBwjYiFkUgY",
+            "image": "https:aac.saavncdn.coma682aLaxmii-Hindi-2020-20201127115234-150x150.jpg",
+            "language": "hindi",
+            "year": "2020",
+            "play_count": "27744135",
+            "explicit_content": "0",
+            "list_count": "0",
+            "list_type": "",
+            "list": "",
+            "more_info": {
+                "music": "Dj Khushi, Shashi",
+                "album_id": "23079822",
+                "album": "Laxmii",
+                "label": "Zee Music Co.",
+                "origin": "playlist",
+                "320kbps": "true",
+                "encrypted_media_url": "iPPGVzyogeiPwpro65A0eUaQggN+8+J44K3M+oogGOWGNVUDFGU3ISf2XaW9QOlBBo2yWUJdjDW3U9p9xfkV4IPzFaLaaK97",
+                "encrypted_cache_url": "",
+                "album_url": "https:aawww.jiosaavn.comaalbumalaxmiia41,I6G5S6eg_",
+                "duration": "187",
+                "rights": {
+                    "code": "0",
+                    "cacheable": "true",
+                    "delete_cached_object": "false",
+                    "reason": ""
+                },
+                "cache_state": "",
+                "has_lyrics": "true",
+                "lyrics_snippet": "tainu Burj Khalifa, ho, tainu Burj Khalifa",
+                "starred": "false",
+                "copyright_text": "au00a9 2020 Zee Music Company",
+                "artistMap": {
+                    "primary_artists": [
+                        {
+                            "id": "1172209",
+                            "name": "Madhubanti",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.coma613aShikari-Bengali-2016-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamadhubanti-avzrx1,OFoIs_"
+                        },
+                        {
+                            "id": "745460",
+                            "name": "Nikhita Gandhi",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.comaartistsaNikhita_Gandhi_003_20200820124512_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistanikhita-gandhi-aPP1RAOLWPAM_"
+                        },
+                        {
+                            "id": "483654",
+                            "name": "Shashi",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.coma705aHigh-Court-Punjabi-2019-20190924060933-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistashashi-afFXAINXzxvE_"
+                        },
+                        {
+                            "id": "467601",
+                            "name": "Dj Khushi",
+                            "role": "primary_artists",
+                            "image": "https:aac.saavncdn.coma047aAe-Dil-Hai-Mushkil-Future-Bass-Remix-By-DJ-Khushi-From-Ae-Dil-Hai-Mushkil-Hindi-2016-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadj-khushi-atw,pBv,W,Uk_"
+                        }
+                    ],
+                    "featured_artists": [],
+                    "artists": [
+                        {
+                            "id": "467601",
+                            "name": "Dj Khushi",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.coma047aAe-Dil-Hai-Mushkil-Future-Bass-Remix-By-DJ-Khushi-From-Ae-Dil-Hai-Mushkil-Hindi-2016-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadj-khushi-atw,pBv,W,Uk_"
+                        },
+                        {
+                            "id": "483654",
+                            "name": "Shashi",
+                            "role": "music",
+                            "image": "https:aac.saavncdn.coma705aHigh-Court-Punjabi-2019-20190924060933-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistashashi-afFXAINXzxvE_"
+                        },
+                        {
+                            "id": "1172209",
+                            "name": "Madhubanti",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.coma613aShikari-Bengali-2016-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistamadhubanti-avzrx1,OFoIs_"
+                        },
+                        {
+                            "id": "745460",
+                            "name": "Nikhita Gandhi",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.comaartistsaNikhita_Gandhi_003_20200820124512_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistanikhita-gandhi-aPP1RAOLWPAM_"
+                        },
+                        {
+                            "id": "483654",
+                            "name": "Shashi",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.coma705aHigh-Court-Punjabi-2019-20190924060933-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistashashi-afFXAINXzxvE_"
+                        },
+                        {
+                            "id": "467601",
+                            "name": "Dj Khushi",
+                            "role": "singer",
+                            "image": "https:aac.saavncdn.coma047aAe-Dil-Hai-Mushkil-Future-Bass-Remix-By-DJ-Khushi-From-Ae-Dil-Hai-Mushkil-Hindi-2016-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistadj-khushi-atw,pBv,W,Uk_"
+                        },
+                        {
+                            "id": "5509188",
+                            "name": "Gagan Ahuja",
+                            "role": "lyricist",
+                            "image": "https:aac.saavncdn.coma305aBig-Shot-Punjabi-2018-20181012-150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistagagan-ahuja-apLtWH6zG7UE_"
+                        },
+                        {
+                            "id": "456099",
+                            "name": "Akshay Kumar",
+                            "role": "starring",
+                            "image": "https:aac.saavncdn.comaartistsaAkshay_Kumar_002_20191111092415_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistaakshay-kumar-aZZntYtxiAAM_"
+                        },
+                        {
+                            "id": "702466",
+                            "name": "Kiara Advani",
+                            "role": "starring",
+                            "image": "https:aac.saavncdn.comaartistsaKiara_Advani_150x150.jpg",
+                            "type": "artist",
+                            "perma_url": "https:aawww.jiosaavn.comaartistakiara-advani-apxV2A60cbkI_"
+                        }
+                    ]
+                },
+                "release_date": "2020-10-10",
+                "label_url": "alabelazee-music-co.-albumsa06cepoPTlhU_",
+                "vcode": "010910441188778",
+                "vlink": "https:aajiotunepreview.jio.comacontentaConverteda010910441145206.mp3",
+                "triller_available": false,
+                "lyrics_id": ""
+            }
+        }
+    ],
+    "more_info": {
+        "uid": "phulki_user",
+        "last_updated": "1613766305",
+        "username": "",
+        "firstname": "JioSaavn",
+        "lastname": "",
+        "is_followed": "",
+        "isFY": false,
+        "follower_count": "1889464",
+        "fan_count": "1753716",
+        "playlist_type": "weekly",
+        "share": "1"
+    },
+    "modules": {
+        "list": {
+            "source": "list",
+            "position": 1,
+            "scroll_type": "Cells_Standard",
+            "title": "",
+            "subtitle": "",
+            "highlight": "",
+            "simpleHeader": false,
+            "noHeader": true,
+            "view_more": []
+        }
+    }
+}
