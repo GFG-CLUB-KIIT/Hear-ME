@@ -49,7 +49,7 @@ Future<List<SongModel>> fetchSongsList(String searchQuery) async {
   }
 }
 
-Future<List> topSongs() async {
+Future<List<SongModel>> topSongs() async {
   String topSongsUrl =
       "https://www.jiosaavn.com/api.php?__call=webapi.get&token=8MT-LQlP35c_&type=playlist&p=1&n=20&includeMetaTags=0&ctx=web6dot0&api_version=4&_format=json&_marker=0";
   var songsListJSON =
@@ -67,16 +67,16 @@ Future<List> topSongs() async {
           ["primary_artists"][0]['name']),
       songURL: cleanString(topSongsList[i]['perma_url']),
     ));
-    topSongsList[i]['title'] = cleanString(topSongsList[i]['title'].toString());
-    topSongsList[i]["more_info"]["artistMap"]["primary_artists"][0]["name"] =
-        cleanString(topSongsList[i]["more_info"]["artistMap"]["primary_artists"]
-                [0]["name"]
-            .toString());
-    topSongsList[i]['image'] =
-        topSongsList[i]['image'].toString().replaceAll("150x150", "500x500");
+    // topSongsList[i]['title'] = cleanString(topSongsList[i]['title'].toString());
+    // topSongsList[i]["more_info"]["artistMap"]["primary_artists"][0]["name"] =
+    //     cleanString(topSongsList[i]["more_info"]["artistMap"]["primary_artists"]
+    //             [0]["name"]
+    //         .toString());
+    // topSongsList[i]['image'] =
+    //     topSongsList[i]['image'].toString().replaceAll("150x150", "500x500");
   }
-  print(songs);
-  return topSongsList;
+  // print(songs);
+  return songs;
 }
 
 Future fetchSongDetails(songId) async {
