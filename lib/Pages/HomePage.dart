@@ -144,7 +144,12 @@ class _HomePageState extends State<HomePage> {
                           MaterialPageRoute(builder: (context) => Player()));
                     },
                   ),
-                  playControl(MainAxisAlignment.spaceBetween),
+                  // playControl(MainAxisAlignment.spaceBetween),
+                  IconButton(
+                    icon: Icon(Icons.play_arrow),
+                    iconSize: 30,
+                    onPressed: () {},
+                  )
                 ],
               ),
             );
