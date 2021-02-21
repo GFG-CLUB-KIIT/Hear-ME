@@ -119,7 +119,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                             )),
                         onTap: () {
                           if (_formKey.currentState.validate()) {
-                            resetPassword(email);
+                            HereMeAuth().resetPassword(email);
                           }
                           Navigator.pop(context);
                         },

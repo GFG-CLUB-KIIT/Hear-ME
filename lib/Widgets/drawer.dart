@@ -83,7 +83,7 @@ Widget drawer(BuildContext context, User user) {
           ListTile(
             //TODO:
             onTap: () async {
-              await logOut();
+              await HereMeAuth().logOut();
               //   if (await signOutUser()) {
               Navigator.push(
                 context,

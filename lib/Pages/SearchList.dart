@@ -19,7 +19,7 @@ class _SearchListState extends State<SearchList> {
           elevation: 0,
           title: TextField(
             onChanged: (value) async {
-              var songLists = await fetchSongsList(value);
+              List<dynamic> songLists = await fetchSongsList(value);
               setState(() {
                 songList = songLists;
                 print(songList);
@@ -54,6 +54,9 @@ class _SearchListState extends State<SearchList> {
                             ["primary_artists"]
                         .toString()),
                     leading: Image.network(songList[index]["image"]),
+                    onTap: () {
+                      print(songList[index]);
+                    },
                   ));
             }));
   }
