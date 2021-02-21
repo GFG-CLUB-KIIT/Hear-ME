@@ -45,8 +45,8 @@ class _IsUserLogedInState extends State<IsUserLogedIn> {
   @override
   void initState() {
     auth = FirebaseAuth.instance;
-    print(auth.currentUser.displayName);
-    print(auth.currentUser.email);
+    // print(auth.currentUser.displayName);
+    // print(auth.currentUser.email);
     super.initState();
   }
 
