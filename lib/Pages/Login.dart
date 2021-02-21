@@ -163,9 +163,9 @@ class _LoginPageState extends State<LoginPage> {
                       GestureDetector(
                         onTap: () async {
                           if (_formKey.currentState.validate()) {
-                            User user =
-                                await emailSignIn(email, password, context);
-                            if(user != null){
+                            User user = await HereMeAuth()
+                                .emailSignIn(email, password, context);
+                            if (user != null) {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(

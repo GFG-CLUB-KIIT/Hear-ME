@@ -168,7 +168,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onTap: () async {
                           if (_formKey.currentState.validate()) {
                             User user =
-                                await emailSignUp(email, password, context);
+                                await HereMeAuth().emailSignUp(email, password, context);
                             if (user != null) {
                               Navigator.push(
                                 context,
