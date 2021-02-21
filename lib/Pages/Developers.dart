@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -7,32 +8,75 @@ class Developers extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(9, 18, 39, 1),
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "Developers",
-          // shaderRect: Rect.fromLTWH(13.0, 0.0, 100.0, 50.0),
-          // gradient: LinearGradient(
-          //   colors: [
-          //   Color(0xff4db6ac),
-          //   Color(0xff61e88a),
-          // ]
+      body: Stack(
+        children: [
+          // Container(
+          //   height: 300,
+          //   child: Image.asset(
+          //     "Assets/Images/Icons/logo1.png",
+          //     fit: BoxFit.cover,
+          //     // height: 180,
+          //   ),
           // ),
-          style: TextStyle(
-            fontSize: 25,
-            fontWeight: FontWeight.w700,
+          Container(
+            // width: double.infinity,
+            height: 300,
+            child: ShaderMask(
+              shaderCallback: (rect) {
+                return LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color.fromRGBO(9, 18, 39, 1),
+                    // Colors.black,
+                    Colors.transparent,
+                  ],
+                ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
+              },
+              blendMode: BlendMode.dstOver,
+              child: Image.asset(
+                'Assets/Images/Icons/logo1.png',
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
-        ),
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back,
+          Container(
+            child: ClipRRect(
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 0.5, sigmaY: 0.5),
+                child: new Container(
+                  height: double.infinity,
+                  decoration: new BoxDecoration(
+                    color: Colors.black.withOpacity(0.2),
+                  ),
+                ),
+              ),
+            ),
           ),
-          onPressed: () => Navigator.pop(context, false),
-        ),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
+          Scaffold(
+            backgroundColor: Colors.transparent,
+            appBar: AppBar(
+              elevation: 0,
+              backgroundColor: Colors.transparent,
+              centerTitle: true,
+              title: Text(
+                "Developers",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              leading: IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                ),
+                onPressed: () => Navigator.pop(context, false),
+              ),
+            ),
+            body: SingleChildScrollView(child: AboutCards()),
+          ),
+        ],
       ),
-      body: SingleChildScrollView(child: AboutCards()),
     );
   }
 }
@@ -73,20 +117,12 @@ class AboutCards extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Padding(
+        Container(
+          margin: EdgeInsets.only(top: 180),
           padding: const EdgeInsets.only(top: 20, left: 8, right: 8, bottom: 6),
           child: Column(
             children: <Widget>[
               ListTile(
-                title: Image.asset(
-                  "Assets/Images/Icons/logo.png",
-                  fit: BoxFit.fitHeight,
-                  height: 120,
-                ),
-                // title: Container(
-                //   height: 120,
-                //   child: FlutterLogo(),
-                // ),
                 subtitle: Padding(
                   padding: const EdgeInsets.all(13.0),
                   child: Center(

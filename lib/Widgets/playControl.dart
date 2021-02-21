@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Utils/audio_serviec.dart';
 
 import './gradients.dart';
 
@@ -30,7 +31,9 @@ Row playControl(MainAxisAlignment alignment, Map<String, Color> color) {
           icon: Icon(Icons.pause),
           iconSize: 50,
           color: Colors.white,
-          onPressed: () {},
+          onPressed: () async {
+            player.playing ? await player.pause() : await player.play();
+          },
         ),
         decoration: decoration,
       ),
