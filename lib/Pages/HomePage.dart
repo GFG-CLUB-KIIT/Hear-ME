@@ -9,12 +9,18 @@ import '../Widgets/musicHList.dart';
 import '../Widgets/drawer.dart';
 import 'player.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({
     Key key,
     @required this.user,
   }) : super(key: key);
   final User user;
+
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +43,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       // TODO: Implement Drawer
-      drawer: drawer(context, user),
+      drawer: drawer(context, widget.user),
       body: Container(
         //decoration: BoxDecoration(gradient: LinearGradient(colors: [Color.fromRGBO(9,18,39,1),Color.fromRGBO(9, 9, 9, 1.0)])),
         child: SingleChildScrollView(

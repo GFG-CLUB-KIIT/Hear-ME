@@ -1,7 +1,6 @@
 import 'dart:convert';
-
+import '../model/songModel.dart';
 import 'package:des_plugin/des_plugin.dart';
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 List searchedList = [];
@@ -18,29 +17,29 @@ String kUrl = "",
 String key = "38346591";
 String decrypt = "";
 
-Future<List> fetchSongsList(searchQuery) async {
+Future<List> fetchSongsList(String searchQuery) async {
   String searchUrl =
       "https://www.jiosaavn.com/api.php?app_version=5.18.3&api_version=4&readable_version=5.18.3&v=79&_format=json&query=" +
           searchQuery +
           "&__call=autocomplete.get";
-  var res = await http.get(searchUrl, headers: {"Accept": "application/json"});
-  var resEdited = (res.body).split("-->");
+  http.Response res =
+      await http.get(searchUrl, headers: {"Accept": "application/json"});
+  // print(res.body);
+  List<String> resEdited = (res.body).split("-->");
+
   var getMain = json.decode(resEdited[1]);
+  // print(getMain);
 
+  // SearchResult result = resultFromJson(getMain.toString().replaceAll("\\", "&bslash"));
+  // print(result);
   searchedList = getMain["songs"]["data"];
+  // SongsDatum k = searchedList[0];
+  // print(k);
   for (int i = 0; i < searchedList.length; i++) {
-    searchedList[i]['title'] = searchedList[i]['title']
-        .toString()
-        .replaceAll("&amp;", "&")
-        .replaceAll("&#039;", "'")
-        .replaceAll("&quot;", "\"");
+    searchedList[i]['title'] = cleanString(searchedList[i]['title'].toString());
 
-    searchedList[i]['more_info']['singers'] = searchedList[i]['more_info']
-            ['singers']
-        .toString()
-        .replaceAll("&amp;", "&")
-        .replaceAll("&#039;", "'")
-        .replaceAll("&quot;", "\"");
+    searchedList[i]['more_info']['singers'] =
+        cleanString(searchedList[i]['more_info']['singers'].toString());
   }
   return searchedList;
 }
@@ -53,17 +52,11 @@ Future<List> topSongs() async {
   var songsList = json.decode(songsListJSON.body);
   topSongsList = songsList["list"];
   for (int i = 0; i < topSongsList.length; i++) {
-    topSongsList[i]['title'] = topSongsList[i]['title']
-        .toString()
-        .replaceAll("&amp;", "&")
-        .replaceAll("&#039;", "'")
-        .replaceAll("&quot;", "\"");
+    topSongsList[i]['title'] = cleanString(topSongsList[i]['title'].toString());
     topSongsList[i]["more_info"]["artistMap"]["primary_artists"][0]["name"] =
-        topSongsList[i]["more_info"]["artistMap"]["primary_artists"][0]["name"]
-            .toString()
-            .replaceAll("&amp;", "&")
-            .replaceAll("&#039;", "'")
-            .replaceAll("&quot;", "\"");
+        cleanString(topSongsList[i]["more_info"]["artistMap"]["primary_artists"]
+                [0]["name"]
+            .toString());
     topSongsList[i]['image'] =
         topSongsList[i]['image'].toString().replaceAll("150x150", "500x500");
   }
@@ -78,18 +71,9 @@ Future fetchSongDetails(songId) async {
   var resEdited = (res.body).split("-->");
   var getMain = json.decode(resEdited[1]);
 
-  title = (getMain[songId]["title"])
-      .toString()
-      .split("(")[0]
-      .replaceAll("&amp;", "&")
-      .replaceAll("&#039;", "'")
-      .replaceAll("&quot;", "\"");
+  title = cleanString((getMain[songId]["title"]).toString());
   image = (getMain[songId]["image"]).replaceAll("150x150", "500x500");
-  album = (getMain[songId]["more_info"]["album"])
-      .toString()
-      .replaceAll("&quot;", "\"")
-      .replaceAll("&#039;", "'")
-      .replaceAll("&amp;", "&");
+  album = cleanString((getMain[songId]["more_info"]["album"]).toString());
 
   try {
     artist =
@@ -97,7 +81,7 @@ Future fetchSongDetails(songId) async {
   } catch (e) {
     artist = "-";
   }
-  print(getMain[songId]["more_info"]["has_lyrics"]);
+  // print(getMain[songId]["more_info"]["has_lyrics"]);
   if (getMain[songId]["more_info"]["has_lyrics"] == "true") {
     String lyricsUrl =
         "https://www.jiosaavn.com/api.php?__call=lyrics.getLyrics&lyrics_id=" +
@@ -130,13 +114,16 @@ Future fetchSongDetails(songId) async {
   final request = http.Request('HEAD', Uri.parse(kUrl))
     ..followRedirects = false;
   final response = await client.send(request);
-  print(response);
   kUrl = (response.headers['location']);
-  artist = (getMain[songId]["more_info"]["artistMap"]["primary_artists"][0]
-          ["name"])
-      .toString()
+  artist = cleanString((getMain[songId]["more_info"]["artistMap"]
+          ["primary_artists"][0]["name"])
+      .toString());
+}
+
+String cleanString(String s) {
+  return s
+      .replaceAll("&bslash", "\\")
       .replaceAll("&quot;", "\"")
       .replaceAll("&#039;", "'")
       .replaceAll("&amp;", "&");
-  debugPrint(kUrl);
 }
