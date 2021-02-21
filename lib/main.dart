@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'Pages/Login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'Pages/HomePage.dart';
@@ -7,6 +8,9 @@ import 'package:firebase_core/firebase_core.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+  ));
   runApp(MyApp());
 }
 
@@ -48,7 +52,6 @@ class _IsUserLogedInState extends State<IsUserLogedIn> {
 
   @override
   Widget build(BuildContext context) {
-
     return auth.currentUser != null
         ? HomePage(
             user: auth.currentUser,
