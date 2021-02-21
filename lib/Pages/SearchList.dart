@@ -51,9 +51,9 @@ class _SearchListState extends State<SearchList> {
                           title: Text(songs.value[index].title),
                           subtitle: Text(songs.value[index].artist),
                           leading: Image.network(songs.value[index].imageURL),
-                          onTap: () {
-                            initPlayList(songs.value, index);
-                            print(songs.value[index]);
+                          onTap: () async {
+                            await initPlayList(songs.value, index);
+                            // print(songs.value[index]);
                           },
                         ));
                   });
