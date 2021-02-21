@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
+
 import 'package:flutter_circular_slider/flutter_circular_slider.dart';
 import 'package:flutter_glow/flutter_glow.dart';
 import 'package:palette_generator/palette_generator.dart';
@@ -21,9 +22,9 @@ class _PlayerState extends State<Player> {
     'lightVibrantColor': Colors.indigo,
   };
 
-  String imagePath = 'Assets/Images/xyz.jpg';
+  String imagePath = 'Assets/Images/monsters-go-bump.jpg';
 
-  ImageProvider image = AssetImage('Assets/Images/xyz.jpg');
+  ImageProvider image = AssetImage('Assets/Images/monsters-go-bump.jpg');
 
   @override
   void initState() {
@@ -47,7 +48,6 @@ class _PlayerState extends State<Player> {
     });
   }
 
-  Color c = Color(0xffd35342);
   @override
   Widget build(BuildContext context) {
     final LinearGradient gradient = linearGradient(color);
