@@ -10,7 +10,7 @@ import '../Widgets/drawer.dart';
 import 'player.dart';
 
 class HomePage extends StatefulWidget {
-    const HomePage({
+  const HomePage({
     Key key,
     @required this.user,
   }) : super(key: key);
@@ -130,7 +130,12 @@ class _HomePageState extends State<HomePage> {
                           MaterialPageRoute(builder: (context) => Player()));
                     },
                   ),
-                  playControl(MainAxisAlignment.spaceBetween),
+                  // playControl(MainAxisAlignment.spaceBetween),
+                  IconButton(
+                    icon: Icon(Icons.play_arrow),
+                    iconSize: 30,
+                    onPressed: () {},
+                  )
                 ],
               ),
             );
