@@ -4,6 +4,7 @@ import 'package:HearMe/Utils/audio_serviec.dart';
 import 'package:HearMe/Widgets/playControl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../model/songModel.dart';
 
 import '../Widgets/label.dart';
 import '../Widgets/musicHList.dart';
@@ -79,7 +80,7 @@ class _HomePageState extends State<HomePage> {
 
                   //Top songs
                   label("Top Songs"),
-                  FutureBuilder(
+                  FutureBuilder<List<SongModel>>(
                     future: topSongs(),
                     builder: (context, snapshot) {
                       if (!snapshot.hasData) {
