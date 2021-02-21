@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../Widgets/musicTile.dart';
+import '../Utils/audio_serviec.dart';
 
 /*
 Music Horizontal List
@@ -24,10 +25,15 @@ Widget musicHList(var data) {
       itemBuilder: (BuildContext context, int index) {
         // imageTile - User Defined Widget (../Widgets/imageTile.dart)
 
-        return musicTile(
-          data[index].imageURL,
-          data[index].title,
-          data[index].artist,
+        return GestureDetector(
+          onTap: () async {
+            await initPlayList(data, index);
+          },
+          child: musicTile(
+            data[index].imageURL,
+            data[index].title,
+            data[index].artist,
+          ),
         );
       },
       // Separator Builder Function
