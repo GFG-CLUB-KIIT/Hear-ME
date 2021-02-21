@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:flutter_circular_slider/flutter_circular_slider.dart';
 import 'package:flutter_glow/flutter_glow.dart';
 import 'package:palette_generator/palette_generator.dart';
+import '../Utils/audio_serviec.dart';
 
 import '../Widgets/playControl.dart';
 import '../Widgets/gradients.dart';
@@ -22,9 +23,9 @@ class _PlayerState extends State<Player> {
     'lightVibrantColor': Colors.indigo,
   };
 
-  String imagePath = 'Assets/Images/monsters-go-bump.jpg';
+  String imagePath = 'Assets/Images/tera-zikr.jpg';
 
-  ImageProvider image = AssetImage('Assets/Images/monsters-go-bump.jpg');
+  ImageProvider image = AssetImage('Assets/Images/tera-zikr.jpg');
 
   @override
   void initState() {
@@ -122,16 +123,37 @@ class _PlayerState extends State<Player> {
                       child: Container(
                         height: 300,
                         child: Center(
-                          child: SingleCircularSlider(
-                            100,
-                            50,
-                            baseColor: Colors.white.withOpacity(0.3),
-                            selectionColor: color['lightVibrantColor'],
-                            handlerColor: Colors.white,
-                            handlerOutterRadius: 8.0,
-                            secondarySectors: 10,
-                            sliderStrokeWidth: 3.0,
-                          ),
+                          child: StreamBuilder<Duration>(
+                              stream: player.durationStream,
+                              builder: (context, duration) {
+                                return StreamBuilder<Duration>(
+                                    stream: player.positionStream,
+                                    builder: (context, position) {
+                                      // double length = (position
+                                      //             .data.inMilliseconds /
+                                      //         duration.data.inMilliseconds) *
+                                      //     100;
+                                      // // print(length);
+                                      // print(position.data.inSeconds);
+                                      // print(position.data.inSeconds);
+                                      return SingleCircularSlider(
+                                        duration.data.inSeconds == null
+                                            ? 1
+                                            : duration.data.inSeconds,
+                                        position.data.inSeconds == null
+                                            ? 1
+                                            : position.data.inSeconds,
+                                        baseColor:
+                                            Colors.white.withOpacity(0.3),
+                                        selectionColor:
+                                            color['lightVibrantColor'],
+                                        handlerColor: Colors.white,
+                                        handlerOutterRadius: 8.0,
+                                        secondarySectors: 10,
+                                        sliderStrokeWidth: 3.0,
+                                      );
+                                    });
+                              }),
                         ),
                       ),
                     ),
