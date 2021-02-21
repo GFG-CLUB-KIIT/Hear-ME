@@ -5,7 +5,6 @@ class SongModel {
   String albumName;
   String imageURL;
   String songURL;
-  String lyrics;
 
   SongModel(
       {this.id,
@@ -13,6 +12,5 @@ class SongModel {
       this.artist,
       this.albumName,
       this.imageURL,
-      this.songURL,
-      this.lyrics});
+      this.songURL,});
 }

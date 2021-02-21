@@ -3,7 +3,7 @@ import '../model/songModel.dart';
 import 'package:des_plugin/des_plugin.dart';
 import 'package:http/http.dart' as http;
 
-List searchedList = [];
+// List searchedList = [];
 List topSongsList = [];
 String kUrl = "",
     checker,
@@ -15,33 +15,38 @@ String kUrl = "",
     has_320,
     rawkUrl;
 String key = "38346591";
-String decrypt = "";
+// String decrypt = "";
 
-Future<List> fetchSongsList(String searchQuery) async {
-  String searchUrl =
-      "https://www.jiosaavn.com/api.php?app_version=5.18.3&api_version=4&readable_version=5.18.3&v=79&_format=json&query=" +
-          searchQuery +
-          "&__call=autocomplete.get";
-  http.Response res =
-      await http.get(searchUrl, headers: {"Accept": "application/json"});
-  // print(res.body);
-  List<String> resEdited = (res.body).split("-->");
+Future<List<SongModel>> fetchSongsList(String searchQuery) async {
+  try {
+    String searchUrl =
+        "https://www.jiosaavn.com/api.php?app_version=5.18.3&api_version=4&readable_version=5.18.3&v=79&_format=json&query=" +
+            searchQuery +
+            "&__call=autocomplete.get";
+    http.Response res =
+        await http.get(searchUrl, headers: {"Accept": "application/json"});
+    List<String> resEdited = (res.body).split("-->");
 
-  var getMain = json.decode(resEdited[1]);
-  // print(getMain);
+    var getMain = json.decode(resEdited[1]);
 
-  // SearchResult result = resultFromJson(getMain.toString().replaceAll("\\", "&bslash"));
-  // print(result);
-  searchedList = getMain["songs"]["data"];
-  // SongsDatum k = searchedList[0];
-  // print(k);
-  for (int i = 0; i < searchedList.length; i++) {
-    searchedList[i]['title'] = cleanString(searchedList[i]['title'].toString());
-
-    searchedList[i]['more_info']['singers'] =
-        cleanString(searchedList[i]['more_info']['singers'].toString());
+    List<dynamic> searchedList = getMain["songs"]["data"];
+    List<SongModel> songs = [];
+    for (int i = 0; i < searchedList.length; i++) {
+      songs.add(SongModel(
+        id: cleanString(searchedList[i]['id'].toString()),
+        title: cleanString(searchedList[i]['title'].toString()),
+        artist: cleanString(
+            searchedList[i]['more_info']['primary_artists'].toString()),
+        albumName:
+            cleanString(searchedList[i]['more_info']['album'].toString()),
+        imageURL: cleanString(searchedList[i]['image'].toString()),
+        songURL: cleanString(searchedList[i]['more_info']['vlink'].toString()),
+      ));
+    }
+    return songs;
+  } catch (e) {
+    return [];
   }
-  return searchedList;
 }
 
 Future<List> topSongs() async {

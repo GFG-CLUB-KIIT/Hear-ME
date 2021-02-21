@@ -1,5 +1,6 @@
 import 'package:HearMe/API/saavn.dart';
 import 'package:HearMe/Pages/searchList.dart';
+import 'package:HearMe/Utils/audio_serviec.dart';
 import 'package:HearMe/Widgets/playControl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ import '../Widgets/drawer.dart';
 import 'player.dart';
 
 class HomePage extends StatefulWidget {
-    const HomePage({
+  const HomePage({
     Key key,
     @required this.user,
   }) : super(key: key);
@@ -21,6 +22,19 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  
+  @override
+  void initState() {
+    initAudio();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    disposeAudio();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
