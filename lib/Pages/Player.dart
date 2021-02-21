@@ -21,9 +21,9 @@ class _PlayerState extends State<Player> {
     'lightVibrantColor': Colors.indigo,
   };
 
-  String imagePath = 'Assets/Images/xyz.jpg';
+  String imagePath = 'Assets/Images/marshmello.jpg';
 
-  ImageProvider image = AssetImage('Assets/Images/xyz.jpg');
+  ImageProvider image = AssetImage('Assets/Images/marshmello.jpg');
 
   @override
   void initState() {
