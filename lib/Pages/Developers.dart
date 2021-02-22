@@ -168,53 +168,67 @@ class AboutCards extends StatelessWidget {
       (entity) => Padding(
         padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 6),
         child: Card(
-          color: Colors.indigo[900],
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
           elevation: 2.3,
-          child: ListTile(
-            leading: Container(
-              height: 50,
-              width: 50,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: NetworkImage(entity['profileURL']),
-                ),
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: FractionalOffset.topLeft,
+                end: Alignment(0.4, 0),
+                colors: [
+                  const Color.fromRGBO(248, 7, 7, 100),
+                  const Color.fromRGBO(218, 0, 255, 100)
+                ],
               ),
             ),
-            title: Text(
-              entity['name'],
-            ),
-            subtitle: Text(
-              entity['subtitle'],
-            ),
-            trailing: Wrap(
-              children: <Widget>[
-                // Github Icon
-                IconButton(
-                  icon: Icon(
-                    MdiIcons.github,
+            child: ListTile(
+              leading: Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: NetworkImage(entity['profileURL']),
                   ),
-                  tooltip: 'GitHub',
-                  onPressed: () {
-                    _launchURL(entity['githubURL']);
-                    print(entity['githubURL']);
-                  },
                 ),
-                // Instagram Icon
-                IconButton(
-                  icon: Icon(
-                    MdiIcons.instagram,
+              ),
+              title: Text(
+                entity['name'],
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: Text(
+                entity['subtitle'],
+              ),
+              trailing: Wrap(
+                children: <Widget>[
+                  // Github Icon
+                  IconButton(
+                    icon: Icon(
+                      MdiIcons.github,
+                    ),
+                    tooltip: 'GitHub',
+                    onPressed: () {
+                      _launchURL(entity['githubURL']);
+                      print(entity['githubURL']);
+                    },
                   ),
-                  tooltip: 'Contact on Instagram',
-                  onPressed: () {
-                    _launchURL(entity['instagramURL']);
-                    print(entity['instagramURL']);
-                  },
-                ),
-              ],
+                  // Instagram Icon
+                  IconButton(
+                    icon: Icon(
+                      MdiIcons.instagram,
+                    ),
+                    tooltip: 'Contact on Instagram',
+                    onPressed: () {
+                      _launchURL(entity['instagramURL']);
+                      print(entity['instagramURL']);
+                    },
+                  ),
+                ],
+              ),
             ),
           ),
         ),
