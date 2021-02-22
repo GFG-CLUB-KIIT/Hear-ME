@@ -138,12 +138,13 @@ class _PlayerState extends State<Player> {
                                       // print(position.data.inSeconds);
                                       // print(position.data.inSeconds);
                                       return SingleCircularSlider(
-                                        duration.data.inSeconds == null
-                                            ? 1
-                                            : duration.data.inSeconds,
-                                        position.data.inSeconds == null
-                                            ? 1
-                                            : position.data.inSeconds,
+                                        // duration.data.inSeconds == null
+                                        //     ? 1
+                                        //     : duration.data.inSeconds,
+                                        // position.data.inSeconds == null
+                                        //     ? 1
+                                        //     : position.data.inSeconds,
+                                        100, 10,
                                         baseColor:
                                             Colors.white.withOpacity(0.3),
                                         selectionColor:
