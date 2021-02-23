@@ -15,8 +15,8 @@ class BottomMusicSheet extends StatelessWidget {
             alignment: Alignment.center,
             children: [
               Container(
-                width: MediaQuery.of(context).size.width - 60,
-                height: 60,
+                width: MediaQuery.of(context).size.width,
+                height: 70,
                 child: ShaderMask(
                   shaderCallback: (rect) {
                     return LinearGradient(
@@ -38,7 +38,7 @@ class BottomMusicSheet extends StatelessWidget {
                 ),
               ),
               Container(
-                height: 60,
+                height: 70,
                 child: ClipRRect(
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 7.0, sigmaY: 7.0),
@@ -51,50 +51,30 @@ class BottomMusicSheet extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                height: 60,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    InkWell(
-                      child: Row(
-                        children: [
-                          Image.asset(
-                            "Assets/Images/tera-zikr.jpg",
-                            fit: BoxFit.cover,
-                            width: 60,
-                            height: 60,
-                          ),
-                          SizedBox(
-                            width: 5,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text("Monsters Go Bump"),
-                              Text("ERIKA RECINOS",
-                                  style: TextStyle(
-                                    color: Colors.grey,
-                                    fontSize: 10,
-                                  )),
-                            ],
-                          )
-                        ],
-                      ),
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Player()));
-                      },
-                    ),
-                    // playControl(MainAxisAlignment.spaceBetween),
-                    IconButton(
-                      icon: Icon(Icons.play_arrow),
-                      iconSize: 30,
-                      onPressed: () {},
-                    )
-                  ],
+              ListTile(
+                dense: true,
+                leading: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.asset(
+                    "Assets/Images/tera-zikr.jpg",
+                    fit: BoxFit.cover,
+                  ),
                 ),
+                title: Text("Monsters Go Bump"),
+                subtitle: Text("Artist"),
+                trailing: IconButton(
+                  icon: Icon(Icons.play_arrow),
+                  iconSize: 30,
+                  onPressed: () {},
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Player(),
+                    ),
+                  );
+                },
               ),
             ],
           ),
@@ -103,3 +83,49 @@ class BottomMusicSheet extends StatelessWidget {
     );
   }
 }
+
+// Container(
+//                 height: 60,
+//                 child: Row(
+//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                   children: [
+//                     InkWell(
+//                       child: Row(
+//                         children: [
+//                           Image.asset(
+//                             "Assets/Images/tera-zikr.jpg",
+//                             fit: BoxFit.cover,
+//                             width: 60,
+//                             height: 60,
+//                           ),
+//                           SizedBox(
+//                             width: 5,
+//                           ),
+//                           Column(
+//                             crossAxisAlignment: CrossAxisAlignment.start,
+//                             mainAxisAlignment: MainAxisAlignment.center,
+//                             children: [
+//                               Text("Monsters Go Bump"),
+//                               Text("ERIKA RECINOS",
+//                                   style: TextStyle(
+//                                     color: Colors.grey,
+//                                     fontSize: 10,
+//                                   )),
+//                             ],
+//                           )
+//                         ],
+//                       ),
+//                       onTap: () {
+//                         Navigator.push(context,
+//                             MaterialPageRoute(builder: (context) => Player()));
+//                       },
+//                     ),
+//                     // playControl(MainAxisAlignment.spaceBetween),
+//                     IconButton(
+//                       icon: Icon(Icons.play_arrow),
+//                       iconSize: 30,
+//                       onPressed: () {},
+//                     )
+//                   ],
+//                 ),
+//               ),
