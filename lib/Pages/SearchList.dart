@@ -20,25 +20,33 @@ class _SearchListState extends State<SearchList> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        title: TextField(
-          onChanged: (value) async {
-            if (value != "") {
-              songs.value = await fetchSongsList(value);
-            }
-          },
-          controller: searchController,
-          decoration: InputDecoration(
-            hintText: "Search",
+        title: Container(
+          decoration: BoxDecoration(
+            color: Colors.black.withOpacity(0.3),
+            borderRadius: BorderRadius.circular(32),
+          ),
+          child: TextField(
+            controller: searchController,
+            maxLines: 1,
+            onChanged: (value) async {
+              if (value != "") {
+                songs.value = await fetchSongsList(value);
+              }
+            },
+            decoration: InputDecoration(
+              hintStyle: TextStyle(fontSize: 17),
+              hintText: 'Search songs...',
+              suffixIcon: IconButton(
+                icon: Icon(Icons.cancel),
+                onPressed: () {
+                  searchController.text = '';
+                },
+              ),
+              border: InputBorder.none,
+              contentPadding: EdgeInsets.all(20),
+            ),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.search),
-            onPressed: () async {
-              songs.value = await fetchSongsList(searchController.text);
-            },
-          )
-        ],
       ),
       body: ValueListenableBuilder<List<SongModel>>(
         valueListenable: songs,
