@@ -26,7 +26,7 @@ class SearchCard extends StatelessWidget {
           alignment: Alignment.center,
           children: [
             Container(
-              width: MediaQuery.of(context).size.width * 0.9,
+              width: MediaQuery.of(context).size.width,
               height: 80,
               child: ShaderMask(
                 shaderCallback: (rect) {
@@ -35,15 +35,17 @@ class SearchCard extends StatelessWidget {
                     end: Alignment.bottomCenter,
                     colors: [
                       Color.fromRGBO(9, 18, 39, 1),
-                      // Colors.black,
                       Colors.transparent,
                     ],
                   ).createShader(Rect.fromLTRB(0, 0, rect.width, rect.height));
                 },
                 blendMode: BlendMode.dstOver,
-                child: Image.network(
-                  songs[index].imageURL,
-                  fit: BoxFit.cover,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image.network(
+                    songs[index].imageURL,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               decoration: BoxDecoration(
@@ -79,7 +81,6 @@ class SearchCard extends StatelessWidget {
               ),
               onTap: () async {
                 await initPlayList(songs, index);
-                // print(songs.value[index]);
               },
             ),
           ],
@@ -94,50 +95,3 @@ class SearchCard extends StatelessWidget {
     );
   }
 }
-
-// Earlier
-
-// Card(
-//       color: Colors.indigo[900],
-//       child: ListTile(
-//         title: Text(songs[index].title),
-//         subtitle: Text(songs[index].artist),
-//         leading: Image.network(songs[index].imageURL),
-//         onTap: () async {
-//           await initPlayList(songs, index);
-//           // print(songs.value[index]);
-//         },
-//       ),
-//     );
-
-// Car with round corner and gradient
-// Card(
-//       child: Container(
-//         child: ListTile(
-//           title: Text(songs[index].title),
-//           subtitle: Text(songs[index].artist),
-//           leading: ClipRRect(
-//             borderRadius: BorderRadius.circular(50.0),
-//             child: Image.network(
-//               songs[index].imageURL,
-//             ),
-//           ),
-//           onTap: () async {
-//             await initPlayList(songs, index);
-//             // print(songs.value[index]);
-//           },
-//         ),
-//         decoration: BoxDecoration(
-//           borderRadius: BorderRadius.circular(20),
-//           gradient: LinearGradient(
-//             colors: [
-//               const Color(0xffee0000).withOpacity(0.5),
-//               const Color(0xffeeee00).withOpacity(0.5),
-//             ],
-//           ),
-//         ),
-//       ),
-//       shape: RoundedRectangleBorder(
-//         borderRadius: BorderRadius.circular(20.0),
-//       ),
-//     );
