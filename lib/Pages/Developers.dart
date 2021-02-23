@@ -10,14 +10,6 @@ class Developers extends StatelessWidget {
       backgroundColor: Color.fromRGBO(9, 18, 39, 1),
       body: Stack(
         children: [
-          // Container(
-          //   height: 300,
-          //   child: Image.asset(
-          //     "Assets/Images/Icons/logo1.png",
-          //     fit: BoxFit.cover,
-          //     // height: 180,
-          //   ),
-          // ),
           Container(
             // width: double.infinity,
             height: 300,
@@ -112,6 +104,9 @@ class AboutCards extends StatelessWidget {
       'profileURL': 'Assets/Images/Developers/NK.jpg',
     },
   ];
+  AboutCards() {
+    this.data.shuffle();
+  }
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -142,10 +137,40 @@ class AboutCards extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 8.0, left: 10, right: 10),
           child: Divider(
             color: Colors.white,
-            thickness: 0.8,
+            thickness: 2,
           ),
         ),
         ...developerTile(context, data),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Row(children: <Widget>[
+            Expanded(
+              child: new Container(
+                  margin: const EdgeInsets.only(left: 10.0, right: 15.0),
+                  child: Divider(
+                    color: Colors.white,
+                    height: 36,
+                    thickness: 2,
+                  )),
+            ),
+            Text(
+              "GFG DEVELOPERS",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+            Expanded(
+              child: new Container(
+                  margin: const EdgeInsets.only(left: 15.0, right: 10.0),
+                  child: Divider(
+                    color: Colors.white,
+                    height: 36,
+                    thickness: 2,
+                  )),
+            ),
+          ]),
+        ),
       ],
     );
   }
