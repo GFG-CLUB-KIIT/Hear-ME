@@ -12,7 +12,7 @@ class LikedSongs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(9, 18, 39, 1),
+      backgroundColor: Color.fromRGBO(8, 10, 54, 10),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

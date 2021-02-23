@@ -9,11 +9,13 @@ import '../Pages/likedSongs.dart';
 Widget drawer(BuildContext context, User user) {
   return Drawer(
     child: Container(
-      color: Color.fromRGBO(9, 18, 39, 1),
+      // color: Color.fromRGBO(9, 18, 39, 1),
+      color: Color.fromRGBO(8, 10, 54, 10),
+
       child: ListView(
         children: [
           UserAccountsDrawerHeader(
-            decoration: BoxDecoration(color: Colors.black.withOpacity(.2)),
+            decoration: BoxDecoration(color: Colors.black.withOpacity(0.2)),
             // accountName:
             //     Text(user.displayName == null ? "User" : user.displayName,
             //         // "User" : user.displayName,
