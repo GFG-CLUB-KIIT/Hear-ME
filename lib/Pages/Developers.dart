@@ -146,7 +146,7 @@ class AboutCards extends StatelessWidget {
             thickness: 0.8,
           ),
         ),
-        ...developerTile(data),
+        ...developerTile(context, data),
       ],
     );
   }
@@ -163,73 +163,116 @@ class AboutCards extends StatelessWidget {
     }
   }
 
-  List<Padding> developerTile(List<Map<String, String>> data) {
+  List<Padding> developerTile(
+      BuildContext context, List<Map<String, String>> data) {
     return (data.map(
       (entity) => Padding(
         padding: const EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 6),
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          elevation: 2.3,
           child: Container(
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.9,
+                  height: 80,
+                  child: ShaderMask(
+                    shaderCallback: (rect) {
+                      return LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Color.fromRGBO(9, 18, 39, 1),
+                          // Colors.black,
+                          Colors.transparent,
+                        ],
+                      ).createShader(
+                          Rect.fromLTRB(0, 0, rect.width, rect.height));
+                    },
+                    blendMode: BlendMode.dstOver,
+                    child: Image.network(
+                      entity['profileURL'],
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                Container(
+                  height: 80,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(sigmaX: 7.0, sigmaY: 7.0),
+                      child: new Container(
+                        height: double.infinity,
+                        decoration: new BoxDecoration(
+                          color: Colors.black.withOpacity(0.7),
+                        ),
+                      ),
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                ListTile(
+                  leading: Container(
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: NetworkImage(entity['profileURL']),
+                      ),
+                    ),
+                  ),
+                  title: Text(
+                    entity['name'],
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  subtitle: Text(
+                    entity['subtitle'],
+                  ),
+                  trailing: Wrap(
+                    children: <Widget>[
+                      // Github Icon
+                      IconButton(
+                        icon: Icon(
+                          MdiIcons.github,
+                        ),
+                        tooltip: 'GitHub',
+                        onPressed: () {
+                          _launchURL(entity['githubURL']);
+                          print(entity['githubURL']);
+                        },
+                      ),
+                      // Instagram Icon
+                      IconButton(
+                        icon: Icon(
+                          MdiIcons.instagram,
+                        ),
+                        tooltip: 'Contact on Instagram',
+                        onPressed: () {
+                          _launchURL(entity['instagramURL']);
+                          print(entity['instagramURL']);
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: FractionalOffset.topLeft,
-                end: Alignment(0.4, 0),
-                colors: [
-                  const Color.fromRGBO(248, 7, 7, 100),
-                  const Color.fromRGBO(218, 0, 255, 100)
-                ],
-              ),
+              borderRadius: BorderRadius.circular(10),
             ),
-            child: ListTile(
-              leading: Container(
-                height: 50,
-                width: 50,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: NetworkImage(entity['profileURL']),
-                  ),
-                ),
-              ),
-              title: Text(
-                entity['name'],
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              subtitle: Text(
-                entity['subtitle'],
-              ),
-              trailing: Wrap(
-                children: <Widget>[
-                  // Github Icon
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.github,
-                    ),
-                    tooltip: 'GitHub',
-                    onPressed: () {
-                      _launchURL(entity['githubURL']);
-                      print(entity['githubURL']);
-                    },
-                  ),
-                  // Instagram Icon
-                  IconButton(
-                    icon: Icon(
-                      MdiIcons.instagram,
-                    ),
-                    tooltip: 'Contact on Instagram',
-                    onPressed: () {
-                      _launchURL(entity['instagramURL']);
-                      print(entity['instagramURL']);
-                    },
-                  ),
-                ],
-              ),
-            ),
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20.0),
           ),
         ),
       ),
