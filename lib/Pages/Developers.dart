@@ -88,29 +88,28 @@ class AboutCards extends StatelessWidget {
       'subtitle': 'Flutter Developer',
       'githubURL': 'https://github.com/1-alok',
       'instagramURL': 'https://instagram.com',
-      'profileURL': 'https://bit.ly/2NBn2Qh',
+      'profileURL': 'Assets/Images/Developers/AP.jpg',
     },
     {
       'name': 'Divyanshu Shekhar',
       'subtitle': 'Web & App Developer',
       'githubURL': 'https://github.com/divshekhar',
       'instagramURL': 'https://instagram.com',
-      'profileURL':
-          'https://divyanshushekhar.com/wp-content/uploads/2020/03/Divyanshu-Shekhar.png',
+      'profileURL': 'Assets/Images/Developers/DS.png',
     },
     {
       'name': 'Ashish Mishra',
-      'subtitle': 'Flutter Developer',
+      'subtitle': 'Web & App Developer',
       'githubURL': 'https://github.com/ashishmishra-bit',
       'instagramURL': 'https://instagram.com',
-      'profileURL': 'https://bit.ly/2M5qRNb',
+      'profileURL': 'Assets/Images/Developers/AM.png',
     },
     {
       'name': 'Nitish Sonthalia',
       'subtitle': 'Android Developer',
       'githubURL': 'https://github.com/nks102000',
       'instagramURL': 'https://instagram.com',
-      'profileURL': 'https://bit.ly/3qCPPCy',
+      'profileURL': 'Assets/Images/Developers/NK.jpg',
     },
   ];
   @override
@@ -190,7 +189,7 @@ class AboutCards extends StatelessWidget {
                           Rect.fromLTRB(0, 0, rect.width, rect.height));
                     },
                     blendMode: BlendMode.dstOver,
-                    child: Image.network(
+                    child: Image.asset(
                       entity['profileURL'],
                       fit: BoxFit.cover,
                     ),
@@ -204,7 +203,7 @@ class AboutCards extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 7.0, sigmaY: 7.0),
+                      filter: ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
                       child: new Container(
                         height: double.infinity,
                         decoration: new BoxDecoration(
@@ -219,13 +218,13 @@ class AboutCards extends StatelessWidget {
                 ),
                 ListTile(
                   leading: Container(
-                    height: 50,
-                    width: 50,
+                    height: 60,
+                    width: 60,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
                         fit: BoxFit.fill,
-                        image: NetworkImage(entity['profileURL']),
+                        image: AssetImage(entity['profileURL']),
                       ),
                     ),
                   ),
@@ -272,7 +271,7 @@ class AboutCards extends StatelessWidget {
             ),
           ),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20.0),
+            borderRadius: BorderRadius.circular(10.0),
           ),
         ),
       ),
