@@ -10,14 +10,6 @@ class Developers extends StatelessWidget {
       backgroundColor: Color.fromRGBO(9, 18, 39, 1),
       body: Stack(
         children: [
-          // Container(
-          //   height: 300,
-          //   child: Image.asset(
-          //     "Assets/Images/Icons/logo1.png",
-          //     fit: BoxFit.cover,
-          //     // height: 180,
-          //   ),
-          // ),
           Container(
             // width: double.infinity,
             height: 300,
@@ -112,6 +104,9 @@ class AboutCards extends StatelessWidget {
       'profileURL': 'Assets/Images/Developers/NK.jpg',
     },
   ];
+  AboutCards() {
+    this.data.shuffle();
+  }
   @override
   Widget build(BuildContext context) {
     return Column(
