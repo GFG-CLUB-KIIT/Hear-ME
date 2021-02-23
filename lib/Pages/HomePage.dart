@@ -1,6 +1,7 @@
 import 'package:HearMe/API/saavn.dart';
 import 'package:HearMe/Pages/searchList.dart';
 import 'package:HearMe/Utils/audio_serviec.dart';
+import 'package:HearMe/Widgets/bottomMusicSheet.dart';
 import 'package:HearMe/Widgets/playControl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -104,57 +105,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      bottomSheet: BottomSheet(
-          backgroundColor: Colors.black,
-          onClosing: () {},
-          builder: (BuildContext context) {
-            return Container(
-              color: Color.fromRGBO(9, 18, 39, 1),
-              height: 60,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  InkWell(
-                    child: Row(
-                      children: [
-                        Image.asset(
-                          "Assets/Images/monsters-go-bump.jpg",
-                          fit: BoxFit.cover,
-                          width: 60,
-                          height: 60,
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text("Monsters Go Bump"),
-                            Text("ERIKA RECINOS",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                  fontSize: 10,
-                                )),
-                          ],
-                        )
-                      ],
-                    ),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Player()));
-                    },
-                  ),
-                  // playControl(MainAxisAlignment.spaceBetween),
-                  IconButton(
-                    icon: Icon(Icons.play_arrow),
-                    iconSize: 30,
-                    onPressed: () {},
-                  )
-                ],
-              ),
-            );
-          }),
+      bottomSheet: BottomMusicSheet(),
     );
   }
 }
