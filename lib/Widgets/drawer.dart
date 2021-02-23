@@ -1,3 +1,4 @@
+import 'package:HearMe/Pages/HomePage.dart';
 import 'package:HearMe/Utils/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -30,26 +31,22 @@ Widget drawer(BuildContext context, User user) {
               ),
             ),
           ),
+
           ListTile(
             leading: Icon(
-              Icons.home,
+              Icons.music_note,
             ),
-            title: Text("Home", style: TextStyle(fontSize: 20.0)),
+            title: Text(
+              "Playlist",
+              style: TextStyle(fontSize: 20.0),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Playlist()),
+              );
+            },
           ),
-          ListTile(
-              leading: Icon(
-                Icons.music_note,
-              ),
-              title: Text(
-                "Playlist",
-                style: TextStyle(fontSize: 20.0),
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Playlist()),
-                );
-              }),
           ListTile(
               leading: Icon(
                 Icons.thumb_up,
