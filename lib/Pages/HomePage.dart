@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
         title: Text("Hear Me"),
         actions: [
           Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.only(right: 20.0),
             child: IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
@@ -58,28 +58,15 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      // TODO: Implement Drawer
       drawer: drawer(context, widget.user),
       body: Container(
-        //decoration: BoxDecoration(gradient: LinearGradient(colors: [Color.fromRGBO(9,18,39,1),Color.fromRGBO(9, 9, 9, 1.0)])),
         child: SingleChildScrollView(
           child: Stack(
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // User Defined Widget in ../Widgets/label.dart
-                  /*
-              lable function provides a way to reuse the code. 
-              */
                   label("Recommended for you"),
-                  /* 
-                    Recommended For You
-                    //TODO: Dynamic implimentation
-                  
-              */
-
-                  //Top songs
                   label("Top Songs"),
                   FutureBuilder<List<SongModel>>(
                     future: topSongs(),
@@ -92,10 +79,7 @@ class _HomePageState extends State<HomePage> {
                       return musicHList(snapshot.data);
                     },
                   ),
-
-                  // My Playlist Label
                   label("My Playlist"),
-
                   SizedBox(
                     height: 100,
                   ),
