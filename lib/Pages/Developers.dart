@@ -174,14 +174,14 @@ class AboutCards extends StatelessWidget {
               children: [
                 Container(
                   width: MediaQuery.of(context).size.width * 0.9,
-                  height: 80,
+                  height: MediaQuery.of(context).size.height * 0.1,
                   child: ShaderMask(
                     shaderCallback: (rect) {
                       return LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          Color.fromRGBO(9, 18, 39, 1),
+                          Color.fromRGBO(8, 10, 54, 10),
                           // Colors.black,
                           Colors.transparent,
                         ],
@@ -199,7 +199,7 @@ class AboutCards extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: 80,
+                  height: MediaQuery.of(context).size.height * 0.1,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: BackdropFilter(

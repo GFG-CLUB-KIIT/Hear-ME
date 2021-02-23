@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
-      backgroundColor: Color.fromRGBO(9, 18, 39, 1),
+      backgroundColor: Color.fromRGBO(8, 10, 54, 10),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

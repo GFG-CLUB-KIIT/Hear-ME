@@ -77,6 +77,7 @@ class BottomMusicSheet extends StatelessWidget {
                                   style: TextStyle(
                                     color: Colors.grey,
                                     fontSize: 10,
+                                    
                                   )),
                             ],
                           )
