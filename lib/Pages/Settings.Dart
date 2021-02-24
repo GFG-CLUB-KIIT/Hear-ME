@@ -87,21 +87,22 @@ class _SettingsPageState extends State<SettingsPage> {
             SizedBox(
               height: 10,
             ),
-            buildNotificationOptionRow("New for you", true),
+            buildNotificationOptionRow("New for you", false),
             buildNotificationOptionRow("Account activity", true),
             buildNotificationOptionRow("Opportunity", false),
             SizedBox(
               height: 50,
             ),
             Center(
-              child: OutlineButton(
+              child: RaisedButton(
                 padding: EdgeInsets.symmetric(horizontal: 40),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
+                    borderRadius: BorderRadius.circular(10)),
                 onPressed: () {},
+                color: Color.fromRGBO(8, 254, 69, 1),
                 child: Text("SIGN OUT",
                     style: TextStyle(
-                        fontSize: 16, letterSpacing: 2.2, color: Colors.white)),
+                        fontSize: 16, letterSpacing: 2.2, color: Colors.black)),
               ),
             )
           ],

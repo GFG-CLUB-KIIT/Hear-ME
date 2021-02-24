@@ -7,6 +7,7 @@ import '../Pages/login.dart';
 import '../Pages/playlist.dart';
 import '../Pages/developers.dart';
 import '../Pages/likedSongs.dart';
+import '../Pages/Settings.dart';
 
 Widget drawer(BuildContext context, User user) {
   return Drawer(
@@ -99,6 +100,12 @@ Widget drawer(BuildContext context, User user) {
               Icons.settings,
             ),
             title: Text("Setting", style: TextStyle(fontSize: 20.0)),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SettingsPage()),
+              );
+            },
           ),
           ListTile(
             //TODO:
