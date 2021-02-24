@@ -198,8 +198,8 @@ class AboutCards extends StatelessWidget {
               alignment: Alignment.center,
               children: [
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.9,
-                  height: MediaQuery.of(context).size.height * 0.1,
+                  width: MediaQuery.of(context).size.width,
+                  height: 80,
                   child: ShaderMask(
                     shaderCallback: (rect) {
                       return LinearGradient(
@@ -214,9 +214,12 @@ class AboutCards extends StatelessWidget {
                           Rect.fromLTRB(0, 0, rect.width, rect.height));
                     },
                     blendMode: BlendMode.dstOver,
-                    child: Image.asset(
-                      entity['profileURL'],
-                      fit: BoxFit.cover,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.asset(
+                        entity['profileURL'],
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                   decoration: BoxDecoration(
@@ -224,7 +227,7 @@ class AboutCards extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.1,
+                  height: 80,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: BackdropFilter(

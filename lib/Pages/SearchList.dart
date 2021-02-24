@@ -18,6 +18,8 @@ class _SearchListState extends State<SearchList> {
     return Scaffold(
       backgroundColor: Color.fromRGBO(8, 10, 54, 10),
       appBar: AppBar(
+        toolbarHeight: 80,
+        centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Container(
