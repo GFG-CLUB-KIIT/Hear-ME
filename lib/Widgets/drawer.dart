@@ -1,4 +1,5 @@
 import 'package:HearMe/Pages/HomePage.dart';
+import 'package:HearMe/Pages/Profile.dart';
 import 'package:HearMe/Utils/authentication.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -48,19 +49,39 @@ Widget drawer(BuildContext context, User user) {
             },
           ),
           ListTile(
-              leading: Icon(
-                Icons.thumb_up,
-              ),
-              title: Text(
-                "Liked Songs",
-                style: TextStyle(fontSize: 20.0),
-              ),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LikedSongs()),
-                );
-              }),
+            leading: Icon(
+              Icons.thumb_up,
+            ),
+            title: Text(
+              "Liked Songs",
+              style: TextStyle(fontSize: 20.0),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LikedSongs(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.verified_user_rounded,
+            ),
+            title: Text(
+              "Profile",
+              style: TextStyle(fontSize: 20.0),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProfilePage(),
+                ),
+              );
+            },
+          ),
           ListTile(
             leading: Icon(
               Icons.supervisor_account,
