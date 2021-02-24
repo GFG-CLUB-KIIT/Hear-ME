@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'HomePage.dart';
-
-// class Profile extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Welcome to Flutter',
-//       home: Profile()
-//     );
-//   }
-// }
+import 'Settings.dart';
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -55,7 +46,14 @@ class _ProfilePage extends State<ProfilePage> {
                 Icons.settings,
                 color: Colors.white,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SettingsPage(),
+                  ),
+                );
+              },
             ),
           ]),
       body: Container(
