@@ -126,6 +126,48 @@ class _ProfilePage extends State<ProfilePage> {
               buildTextField("Email", "test@gmail.com", false),
               buildTextField("Password", "admin@123", true),
               buildTextField("Location", "xyz , India ", false),
+              SizedBox(
+                height: 35,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  RaisedButton(
+                    padding: const EdgeInsets.symmetric(horizontal: 50),
+                    elevation: 2,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    onPressed: () {},
+                    color: Color.fromRGBO(255, 0, 0, 1),
+                    child: Text(
+                      "Cancel",
+                      style: TextStyle(
+                        fontSize: 15,
+                        letterSpacing: 2.3,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  RaisedButton(
+                    padding: const EdgeInsets.symmetric(horizontal: 50),
+                    elevation: 2,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    onPressed: () {},
+                    color: Color.fromRGBO(8, 254, 69, 1),
+                    child: Text(
+                      "Save",
+                      style: TextStyle(
+                        fontSize: 15,
+                        letterSpacing: 2.3,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
