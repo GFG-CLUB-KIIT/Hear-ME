@@ -39,7 +39,7 @@ class _SettingsPageState extends State<SettingsPage> {
               children: [
                 Icon(
                   Icons.person,
-                  color: Colors.green,
+                  color: Colors.white,
                 ),
                 SizedBox(
                   width: 8,
@@ -69,7 +69,7 @@ class _SettingsPageState extends State<SettingsPage> {
               children: [
                 Icon(
                   Icons.volume_up_outlined,
-                  color: Colors.green,
+                  color: Colors.white,
                 ),
                 SizedBox(
                   width: 8,
@@ -101,7 +101,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 onPressed: () {},
                 child: Text("SIGN OUT",
                     style: TextStyle(
-                        fontSize: 16, letterSpacing: 2.2, color: Colors.black)),
+                        fontSize: 16, letterSpacing: 2.2, color: Colors.white)),
               ),
             )
           ],
@@ -117,9 +117,7 @@ class _SettingsPageState extends State<SettingsPage> {
         Text(
           title,
           style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w500,
-              color: Colors.grey[600]),
+              fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white),
         ),
         Transform.scale(
             scale: 0.7,
@@ -167,12 +165,12 @@ class _SettingsPageState extends State<SettingsPage> {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
-                color: Colors.grey[600],
+                color: Colors.white,
               ),
             ),
             Icon(
               Icons.arrow_forward_ios,
-              color: Colors.grey,
+              color: Colors.white,
             ),
           ],
         ),
