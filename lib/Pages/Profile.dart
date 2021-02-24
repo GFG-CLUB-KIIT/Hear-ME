@@ -18,6 +18,7 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePage extends State<ProfilePage> {
+  bool showPasswords = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,10 +122,10 @@ class _ProfilePage extends State<ProfilePage> {
               SizedBox(
                 height: 40,
               ),
-              buildTextField("Full Name", "Ashish Mishra"),
-              buildTextField("Email", "test@gmail.com"),
-              buildTextField("Password", "admin@123"),
-              buildTextField("Location", "xyz , India "),
+              buildTextField("Full Name", "Ashish Mishra", false),
+              buildTextField("Email", "test@gmail.com", false),
+              buildTextField("Password", "admin@123", true),
+              buildTextField("Location", "xyz , India ", false),
             ],
           ),
         ),
@@ -132,16 +133,30 @@ class _ProfilePage extends State<ProfilePage> {
     );
   }
 
-  Widget buildTextField(String labelText, String placeholder) {
+  Widget buildTextField(
+      String labelText, String placeholder, bool isPasswordTextField) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 35.0),
       child: TextField(
+        obscureText: isPasswordTextField ? showPasswords : false,
         decoration: InputDecoration(
+          suffixIcon: isPasswordTextField
+              ? IconButton(
+                  onPressed: () {
+                    setState(() {
+                      showPasswords = !showPasswords;
+                    });
+                  },
+                  icon: Icon(
+                    Icons.remove_red_eye,
+                    color: Colors.white70,
+                  ),
+                )
+              : null,
           contentPadding: EdgeInsets.only(bottom: 5),
           labelText: labelText,
           labelStyle: TextStyle(
             color: Colors.white,
-            // fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
           floatingLabelBehavior: FloatingLabelBehavior.always,
